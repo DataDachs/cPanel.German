@@ -1,0 +1,14 @@
+{
+  "Imunify360 helps you provide a secure and reliable web hosting service. It’s multi-layered defense architecture ensures precision targeting and eradication of malware and viruses. For more information:" : "Imunify360 helps you provide a secure and reliable web hosting service. It’s multi-layered defense architecture ensures precision targeting and eradication of malware and viruses. For more information:",
+  "Restore Infected Action" : "Restore Infected Action",
+  "On malware detection" : "On malware detection",
+  "On malware cleanup" : "On malware cleanup",
+  "The infected file will never be restored." : "The infected file will never be restored.",
+  "The infected file will be restored after the malware detection - Please note that if you have an auto cleanup the restored file will be removed!" : "The infected file will be restored after the malware detection - Please note that if you have an auto cleanup the restored file will be removed!",
+  "The infected file will be restored after the malware auto clean up." : "The infected file will be restored after the malware auto clean up.",
+  "Lock Infected Action" : "Lock Infected Action",
+  "Never Lock the account backup." : "Never Lock the account backup.",
+  "Lock the account latest backup after malware detection - If you set a restore action on this stage, the cleaned backup will be locked." : "Lock the account latest backup after malware detection - If you set a restore action on this stage, the cleaned backup will be locked.",
+  "Lock the account latest backup after malware cleanup - If you set a restore action on this stage, the cleaned backup will be locked." : "Lock the account latest backup after malware cleanup - If you set a restore action on this stage, the cleaned backup will be locked.",
+  "The script you want to execute when a successful action is triggered.": "The script you want to execute when a successful action is triggered."
+}

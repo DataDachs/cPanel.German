@@ -1,0 +1,25 @@
+
+{
+    "Add New Queue Priority": "Add New Queue Priority",
+    "Apply": "Apply",
+    "Back to Queue Priorities": "Back to Queue Priorities",
+    "Backup Priority": "Backup Priority",
+    "Cancel": "Cancel",
+    "Clone Priority": "Clone Priority",
+    "Disregard Changes": "Disregard Changes",
+    "Download Priority": "Download Priority",
+    "List Tags": "List Tags",
+    "Modify Queue Priority \"%s\"": "Modify Queue Priority \"%s\"",
+    "Name": "Name",
+    "No tag matching \"%s\" were found.": "No tag matching \"%s\" were found.",
+    "Restore Priority": "Restore Priority",
+    "Save": "Save",
+    "Set the queue priority name": "Set the queue priority name",
+    "Specify queue backup priority value": "Specify queue backup priority value",
+    "Specify queue clone priority value": "Specify queue clone priority value",
+    "Specify queue download priority value": "Specify queue download priority value",
+    "Specify queue restore priority value": "Specify queue restore priority value",
+    "Start typing the requested tag name...": "Start typing the requested tag name...",
+    "Tags": "Tags",
+    "You didn't saved your changes": "You didn't saved your changes"
+}

@@ -1,0 +1,24 @@
+
+{
+    "Category": "Category",
+    "Create New File Permission": "Create New File Permission",
+    "Directories Permissions": "Directories Permissions",
+    "Dirs Perms": "Dirs Perms",
+    "File Permissions": "File Permissions",
+    "Files Permissions": "Files Permissions",
+    "Files Perms": "Files Perms",
+    "Glob Pattern": "Glob Pattern",
+    "Group": "Group",
+    "Loading File Permissions": "Loading File Permissions",
+    "No": "No",
+    "No File Permissions Found": "No File Permissions Found",
+    "None": "None",
+    "Owner": "Owner",
+    "Recursive": "Recursive",
+    "Refresh Records": "Refresh Records",
+    "Sort by %s.": "Sort by %s.",
+    "This file permission will be permanently deleted!": "This file permission will be permanently deleted!",
+    "Yes": "Yes",
+    "default": "default",
+    "recursive": "recursive"
+}

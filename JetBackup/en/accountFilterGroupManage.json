@@ -1,0 +1,21 @@
+
+{
+    "Accounts Filter": "Accounts Filter",
+    "Apply": "Apply",
+    "Back to Account Filter Groups": "Back to Account Filter Groups",
+    "Cancel": "Cancel",
+    "Characters Range Filter": "Characters Range Filter",
+    "Create New Account Filter Group": "Create New Account Filter Group",
+    "Disk Space Usage Filter": "Disk Space Usage Filter",
+    "Disregard Changes": "Disregard Changes",
+    "Encryption Filter": "Encryption Filter",
+    "Inodes Usage Filter": "Inodes Usage Filter",
+    "Modify Account Filter Group \"%s\"": "Modify Account Filter Group \"%s\"",
+    "Owned By Filter": "Owned By Filter",
+    "Packages Filter": "Packages Filter",
+    "Regular Expression Filter": "Regular Expression Filter",
+    "Resellers Filter": "Resellers Filter",
+    "Save": "Save",
+    "Suspension Filter": "Suspension Filter",
+    "You didn't saved your changes": "You didn't saved your changes"
+}

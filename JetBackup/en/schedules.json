@@ -1,0 +1,24 @@
+
+{
+    "Create New Schedule": "Create New Schedule",
+    "Daily Schedule runs every %s": "Daily Schedule runs every %s",
+    "Delay": "Delay",
+    "Filter by Tags": "Filter by Tags",
+    "Hourly Schedule runs every %s Hours": "Hourly Schedule runs every %s Hours",
+    "Jobs Assigned": "Jobs Assigned",
+    "Loading Schedules": "Loading Schedules",
+    "Monthly Schedule runs every %s of every month": "Monthly Schedule runs every %s of every month",
+    "Name": "Name",
+    "No Delay": "No Delay",
+    "No Schedules Found": "No Schedules Found",
+    "Owner": "Owner",
+    "Refresh Records": "Refresh Records",
+    "Runs after the \"%s\" backup job Ends": "Runs after the \"%s\" backup job Ends",
+    "Runs after the \"%s\" clone job Ends": "Runs after the \"%s\" clone job Ends",
+    "Schedules": "Schedules",
+    "Sort by %s.": "Sort by %s.",
+    "This schedule will be permanently deleted!": "This schedule will be permanently deleted!",
+    "Type": "Type",
+    "Weekly Schedule runs every %s": "Weekly Schedule runs every %s",
+    "day": "day"
+}

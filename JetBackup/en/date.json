@@ -1,0 +1,7 @@
+
+{
+  "short": "D MMM YYYY",
+  "shorttime": "D MMM YYYY |TIME|",
+  "long": "ddd, MMM D, YYYY",
+  "longtime": "ddd, MMM D, YYYY, |TIME|"
+}

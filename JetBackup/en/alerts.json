@@ -1,0 +1,27 @@
+
+{
+    "Alerts": "Alerts",
+    "Alerts documentation.": "Alerts documentation.",
+    "All Alerts": "All Alerts",
+    "All alerts will be deleted and no future notifications will be sent": "All alerts will be deleted and no future notifications will be sent",
+    "Clear Alerts": "Clear Alerts",
+    "Created": "Created",
+    "Critical Alerts": "Critical Alerts",
+    "Error: %s": "Error: %s",
+    "Failed": "Failed",
+    "For more information, please visit the": "For more information, please visit the",
+    "Information Alerts": "Information Alerts",
+    "Level": "Level",
+    "Loading Alerts": "Loading Alerts",
+    "Message": "Message",
+    "Message sent %s to \"%s\" on %s": "Message sent %s to \"%s\" on %s",
+    "No Alerts Found": "No Alerts Found",
+    "Owner": "Owner",
+    "Refresh Records": "Refresh Records",
+    "Send Logs": "Send Logs",
+    "Sort by %s.": "Sort by %s.",
+    "Successfully": "Successfully",
+    "There are 3 alert levels: critical, warning and information.": "There are 3 alert levels: critical, warning and information.",
+    "Title": "Title",
+    "Warning Alerts": "Warning Alerts"
+}

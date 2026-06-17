@@ -1,0 +1,27 @@
+
+{
+    "Apply": "Apply",
+    "Apply changes": "Apply changes",
+    "Apply the File Permission Rule recursively.": "Apply the File Permission Rule recursively.",
+    "Back to File Permissions": "Back to File Permissions",
+    "Cancel": "Cancel",
+    "Cancel changes": "Cancel changes",
+    "Category": "Category",
+    "Create New File Permission": "Create New File Permission",
+    "Directories Permissions": "Directories Permissions",
+    "Files Permissions": "Files Permissions",
+    "Glob Pattern": "Glob Pattern",
+    "Group": "Group",
+    "Modify File Permission": "Modify File Permission",
+    "No": "No",
+    "Owner": "Owner",
+    "Recursive": "Recursive",
+    "Save": "Save",
+    "Save changes": "Save changes",
+    "Specify the permission glob pattern": "Specify the permission glob pattern",
+    "Specify the restored directories permissions": "Specify the restored directories permissions",
+    "Specify the restored file group. Leave empty to use default group": "Specify the restored file group. Leave empty to use default group",
+    "Specify the restored file ownership. Leave empty to use default user": "Specify the restored file ownership. Leave empty to use default user",
+    "Specify the restored files permissions": "Specify the restored files permissions",
+    "Yes": "Yes"
+}

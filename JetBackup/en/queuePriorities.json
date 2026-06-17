@@ -1,0 +1,17 @@
+
+{
+    "Backup Priority": "Backup Priority",
+    "Clone Priority": "Clone Priority",
+    "Create New Queue Priority": "Create New Queue Priority",
+    "Default": "Default",
+    "Download Priority": "Download Priority",
+    "Loading Queue Priorities": "Loading Queue Priorities",
+    "Name": "Name",
+    "No Queue Priorities Found": "No Queue Priorities Found",
+    "Queue Priorities": "Queue Priorities",
+    "Refresh Records": "Refresh Records",
+    "Restore Priority": "Restore Priority",
+    "Sort by %s.": "Sort by %s.",
+    "Tags": "Tags",
+    "This queue priority will be permanently deleted!": "This queue priority will be permanently deleted!"
+}

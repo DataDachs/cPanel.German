@@ -1,0 +1,22 @@
+
+{
+    "Accounts to recover": "Accounts to recover",
+    "Adjust Settings": "Adjust Settings",
+    "Adjust the settings": "Adjust the settings",
+    "Are you sure you want start disaster recovery? All current data will be lost": "Are you sure you want start disaster recovery? All current data will be lost",
+    "Are you sure you want to exit disaster recovery mode?": "Are you sure you want to exit disaster recovery mode?",
+    "Available JB configuration files": "Available JB configuration files",
+    "Connect to the destination where the JetBackup configuration files are stored": "Connect to the destination where the JetBackup configuration files are stored",
+    "Disaster Recovery Wizard": "Disaster Recovery Wizard",
+    "Dropping all JetBackup data from database": "Dropping all JetBackup data from database",
+    "Exit Disaster Recovery Mode": "Exit Disaster Recovery Mode",
+    "Failed restoring JB Configurations, the DR Wizard will now exit and start over. Error: %s": "Failed restoring JB Configurations, the DR Wizard will now exit and start over. Error: %s",
+    "Finish & login to panel": "Finish & login to panel",
+    "JB Configurations destination": "JB Configurations destination",
+    "Next Step": "Next Step",
+    "Please select whether to start to recover your server from a disaster, continue with the default JetBackup configuration, or keep current configuration": "Please select whether to start to recover your server from a disaster, continue with the default JetBackup configuration, or keep current configuration",
+    "Select the desired JB configuration file": "Select the desired JB configuration file",
+    "Select the desired accounts you want to restore": "Select the desired accounts you want to restore",
+    "Start Over": "Start Over",
+    "What to do next?": "What to do next?"
+}

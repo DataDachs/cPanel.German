@@ -1,0 +1,19 @@
+
+{
+    "%s via %s": "%s via %s",
+    "Available Plugins": "Available Plugins",
+    "Choose the security plugin to use": "Choose the security plugin to use",
+    "Choose whether to Lock the account backup or not.": "Choose whether to Lock the account backup or not.",
+    "Choose whether to restore infected file or not.": "Choose whether to restore infected file or not.",
+    "Disabled": "Disabled",
+    "Installed Plugins": "Installed Plugins",
+    "Lock Infected Action": "Lock Infected Action",
+    "Make JetBackup interact with various security plugins, allowing you to automatically restore infected files or lock down your backups to assure data protection.": "Make JetBackup interact with various security plugins, allowing you to automatically restore infected files or lock down your backups to assure data protection.",
+    "No": "No",
+    "Restore Infected Action": "Restore Infected Action",
+    "Save": "Save",
+    "Security": "Security",
+    "Security Plugin": "Security Plugin",
+    "This plugin will be installed on this server!": "This plugin will be installed on this server!",
+    "Yes": "Yes"
+}
