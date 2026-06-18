@@ -1,0 +1,123 @@
+{
+	"AWP": {
+		"accelerate_wp_feature_title": "AccelerateWP",
+		"active": "Aktiv",
+		"advice": "Empfehlung",
+		"advice_available": "Empfehlung verfügbar",
+		"advice_status_applied": "Angewendet",
+		"advice_status_outdated": "Veraltet",
+		"advice_status_pending": "Ausstehend",
+		"advice_status_review": "Überprüfung",
+		"awp_feature_modal_note": "Obwohl für diese Website noch keine SmartAdvice-Empfehlung erstellt wurde, können Sie diese Funktionen manuell aktivieren, da sie die Leistung wahrscheinlich verbessern.",
+		"awp_feature_modal_title": "Funktionen",
+		"awp_feature_tooltip": "Funktion aktivieren",
+		"awp_premium_feature_title": "AccelerateWP",
+		"billing": {
+			"ask_admin_for_upgrade": "Um fortzufahren, benötigen Sie ein Abonnement. <br>Bitte kontaktieren Sie Ihren Administrator, um das Abonnement zu erweitern.",
+			"upgrade_subscription": "Upgrade zum Installieren",
+			"upgrade_your_subscription": "Erweitern Sie Ihr Abonnement"
+		},
+		"cancel_button_text": "Abbrechen",
+		"cdn_1gb_free": "1 GB kostenlos",
+		"cdn_current_plan": "Aktueller Tarif: {{cdnCurrentPlan}}",
+		"cdn_subscription_limit_reached_description": "Bitte aktualisieren Sie Ihr Abonnement, um diese Funktion weiterhin nutzen zu können.",
+		"cdn_subscription_limit_reached_title": "Sie haben das Limit erreicht",
+		"confirm_button_text": "Bestätigen",
+		"contact_administrator_description": "Der Administrator hat keinen Link zum Upgrade angegeben. Bitte kontaktieren Sie Ihren Administrator, um Premium zu erhalten.",
+		"contact_administrator_header": "Kontaktieren Sie Ihren Administrator",
+		"contact_administrator_title": "Kontaktieren Sie Ihren Administrator",
+		"error_log_modal_title": "Fehlerprotokoll",
+		"error_log_tooltip": "Beim Verwalten des Moduls für diese Website ist ein Fehler aufgetreten",
+		"feature_recommended": "Für Ihre Website empfohlen",
+		"hide_websites": "Websites ausblenden",
+		"i_accept_button_text": "Ich akzeptiere",
+		"i_have_read_and_agree_with": "Ich habe gelesen und stimme zu mit",
+		"ignore_errors_button_text": "Fehler ignorieren und erneut versuchen",
+		"incompatibility_modal_title": "Inkompatibilität",
+		"incompatibility_tooltip": "Die Website ist mit diesem Modul nicht kompatibel",
+		"issue": "Problem",
+		"leave_disabled_button_text": "Deaktiviert lassen",
+		"misconfiguration_modal_title": "Fehlkonfiguration",
+		"misconfiguration_tooltip": "Fehlkonfigurationen zwischen Ihrer Website und diesem Modul",
+		"module_accelerate_wp": {
+			"name": "AccelerateWP",
+			"short_description": "Seiten-Caching und Cache-Vorladung, Browser-Caching, Lazy Loading, CSS/JS-Optimierung und mehr"
+		},
+		"module_cdn": {
+			"name": "Content Delivery Network",
+			"short_description": "Verteilt Inhalte weltweit, indem Inhalte in der Nähe des jeweiligen Endbenutzers zwischengespeichert werden."
+		},
+		"module_critical_css": {
+			"name": "Critical Path CSS",
+			"short_description": "Critical Path CSS eliminiert renderblockendes CSS auf Ihrer Website und verbessert die Seitenrenderleistung des Browsers. Ihre Website wird für Ihre Besucher deutlich schneller laden."
+		},
+		"module_disable_success_message": "Das Modul wurde erfolgreich deaktiviert.",
+		"module_enable_success_message": "Das Modul wurde erfolgreich aktiviert.",
+		"module_image_optimization": {
+			"name": "Bildoptimierung",
+			"short_description": "Die Ladezeiten der Website und der Geschwindigkeitswert für viele Ihrer Seitenbesucher können durch die Aktivierung der Bildoptimierung verbessert werden."
+		},
+		"module_incompatibility_detected": "Einige Module können nicht aktiviert werden. Öffnen Sie die Einstellungen für weitere Details",
+		"module_object_cache": {
+			"name": "Redis Object Cache",
+			"short_description": "Speichert Datenbankabfrageergebnisse in einem zusätzlichen Speicher für schnellen Zugriff."
+		},
+		"my_wp_sites_title": "Meine WordPress-Websites",
+		"no_advice": "Keine Empfehlung",
+		"no_allowed_features": {
+			"contact_support": "AccelerateWP ist derzeit deaktiviert. Bitte kontaktieren Sie den Support für weitere Informationen.",
+			"description": "AccelerateWP hilft bei der Lösung von Leistungsproblemen Ihrer Website. Es enthält Optimierungsfunktionen, die einfach für WordPress-Websites aktiviert werden können.",
+			"link_text": "Hier ist der Link zur Anleitung.",
+			"request_access": "Zugang anfordern"
+		},
+		"no_websites": "Keine WordPress-Websites",
+		"pages_expecting_speedup": "{pages} Seiten werden voraussichtlich beschleunigt:",
+		"paginator_items_per_page": "Einträge pro Seite: ",
+		"payment_pending": "Zahlung ausstehend...",
+		"payment_pending_explanation": "Die von Ihnen aktivierten Premium-Funktionen werden in wenigen Minuten auf Ihre WordPress-Website angewendet. Um zu prüfen, ob die Funktionen angewendet wurden, aktualisieren Sie bitte die Seite. Sie können dieses Fenster schließen.",
+		"please_agree_terms_and_conditions": "Bitte stimmen Sie den Allgemeinen Geschäftsbedingungen zu",
+		"post_check_issues_detected_modal_title": "Nachprüfungsprobleme erkannt",
+		"processing": "Wird verarbeitet...",
+		"read_user_guide_link": "Benutzerhandbuch lesen",
+		"refresh_button_text": "Aktualisieren",
+		"rollback_button_text": "Zurücksetzen",
+		"rollback_confirmation": {
+			"input_label": "Bitte teilen Sie uns mit, warum die Anwendung dieser Empfehlung bei Ihnen nicht funktioniert hat: <i>– optional</i>",
+			"placeholder": "Hier eingeben...",
+			"title": "Bitte geben Sie den Grund an"
+		},
+		"show_all_websites": "Alle {count} Websites anzeigen",
+		"show_less": "Weniger anzeigen",
+		"show_more": "Mehr anzeigen",
+		"terms_and_conditions": "Allgemeine Geschäftsbedingungen",
+		"upgrade_button_text": "Upgrade",
+		"upgrade_subscription": "Abonnement erweitern",
+		"upgrade_url_not_set_tooltip": "Bitte kontaktieren Sie Ihren Hosting-Anbieter für ein Upgrade.",
+		"website_search_placeholder": "Suchen",
+		"website_table_col_name": "Website"
+	},
+	"ERROR": {
+		"errWithoutMessage": "Ein unbekannter Fehler ist aufgetreten. Kontaktieren Sie den Support zur Klärung.",
+		"expired_session": "Ihre Sitzung scheint abgelaufen zu sein. Bitte melden Sie sich erneut an. Sie werden zur Anmeldeseite weitergeleitet.",
+		"not_available_plugin": "{pluginName} ist nicht verfügbar. Bitte kontaktieren Sie Ihren Hoster.",
+		"undefined": "Unbekannter Fehler",
+		"undefined_action": "Unbekannte Aktion",
+		"wrong_received_data": "Die empfangenen Daten sind fehlerhaft. Kontaktieren Sie den Support zur Klärung."
+	},
+	"Error": "Fehler",
+	"LANG_CODE": "i-dd_de",
+	"SMART_ADVICE": {
+		"apply_advice": "Empfehlung anwenden",
+		"rollback_title": "Die Empfehlung wurde nicht angewendet",
+		"upgrade_to_apply_advice": "Auf Premium upgraden",
+		"wait_operation_finish_tooltip": "Bitte warten Sie, bis der vorherige Vorgang abgeschlossen ist"
+	},
+	"Show results": "Ergebnisse anzeigen",
+	"Success": "Erfolg",
+	"Try again": "Erneut versuchen",
+	"UNAVAILABLE_PAGE": {
+		"back_to": "Zurück zu",
+		"the_previous_page": "der vorherigen Seite"
+	},
+	"please_wait_we_are_processing": "Bitte warten. Wird verarbeitet..."
+}

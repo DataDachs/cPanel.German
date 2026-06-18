@@ -1,0 +1,123 @@
+{
+	"AWP": {
+		"accelerate_wp_feature_title": "AccelerateWP",
+		"active": "Active",
+		"advice": "Advice",
+		"advice_available": "Advice available",
+		"advice_status_applied": "Applied",
+		"advice_status_outdated": "Outdated",
+		"advice_status_pending": "Pending",
+		"advice_status_review": "Review",
+		"awp_feature_modal_note": "While no SmartAdvice has been generated for this website, you may enable these features manually as they are likely to improve performance.",
+		"awp_feature_modal_title": "Features",
+		"awp_feature_tooltip": "Feature enable",
+		"awp_premium_feature_title": "AccelerateWP",
+		"billing": {
+			"ask_admin_for_upgrade": "To continue you need to have a subscription. <br>Please contact your administrator to upgrade the subscription.",
+			"upgrade_subscription": "Upgrade to install",
+			"upgrade_your_subscription": "Upgrade your subscription"
+		},
+		"cancel_button_text": "Cancel",
+		"cdn_1gb_free": "free 1GB",
+		"cdn_current_plan": "Current plan: {{cdnCurrentPlan}}",
+		"cdn_subscription_limit_reached_description": "Please update your subscription to continue using this feature.",
+		"cdn_subscription_limit_reached_title": "You have reached the limit",
+		"confirm_button_text": "Confirm",
+		"contact_administrator_description": "The admin does not specify the link to upgrade. Please contact your admin to get premium.",
+		"contact_administrator_header": "Contact your admin",
+		"contact_administrator_title": "Contact your admin",
+		"error_log_modal_title": "Error log",
+		"error_log_tooltip": "The error occurs while managing the module for this website",
+		"feature_recommended": "Recommended for your site",
+		"hide_websites": "Hide websites",
+		"i_accept_button_text": "I accept",
+		"i_have_read_and_agree_with": "I have read and agree with",
+		"ignore_errors_button_text": "Ignore errors and try again",
+		"incompatibility_modal_title": "Incompatibility",
+		"incompatibility_tooltip": "The website is incompatible with this module",
+		"issue": "Issue",
+		"leave_disabled_button_text": "Leave as disabled",
+		"misconfiguration_modal_title": "Misconfiguration",
+		"misconfiguration_tooltip": "Misconfigurations between your website and this module",
+		"module_accelerate_wp": {
+			"name": "AccelerateWP",
+			"short_description": "Page сaching and cache preloading, browser caching, lazy loading, CSS/JS optimization and more"
+		},
+		"module_cdn": {
+			"name": "Content Delivery Network",
+			"short_description": "Distributes content throughout the world by caching content close to where each end user is accessing the internet."
+		},
+		"module_critical_css": {
+			"name": "Critical Path CSS",
+			"short_description": "Critical Path CSS eliminates render-blocking CSS on your website and improves browser page render performance. Your website will load much faster for your visitors."
+		},
+		"module_disable_success_message": "The module was successfully disabled.",
+		"module_enable_success_message": "The module was successfully enabled.",
+		"module_image_optimization": {
+			"name": "Image Optimization",
+			"short_description": "Website load times and the speed score for many of your site visitors can be improved by enabling the Image Optimization."
+		},
+		"module_incompatibility_detected": "Some modules cannot be enabled. Open settings for more details",
+		"module_object_cache": {
+			"name": "Redis Object Cache",
+			"short_description": "Stores database query results in additional storage for quick access."
+		},
+		"my_wp_sites_title": "My WordPress Sites",
+		"no_advice": "No advice",
+		"no_allowed_features": {
+			"contact_support": "AccelerateWP is currently disabled, you'll need to contact support for more info.",
+			"description": "AccelerateWP helps to solve performance issues of your website. It includes Optimization features that can be activated for WordPress sites easily.",
+			"link_text": "Here is the link to the guide.",
+			"request_access": "Request Access"
+		},
+		"no_websites": "No WordPress websites",
+		"pages_expecting_speedup": "{pages} pages are expected to be speed up:",
+		"paginator_items_per_page": "Items per page: ",
+		"payment_pending": "Payment pending...",
+		"payment_pending_explanation": "The premium features you enabled will be applied to your WordPress website in several minutes. To check if features were applied, please refresh the page. You can close this window.",
+		"please_agree_terms_and_conditions": "Please agree Terms and conditions",
+		"post_check_issues_detected_modal_title": "Post check issues detected",
+		"processing": "Processing...",
+		"read_user_guide_link": "Read user guide",
+		"refresh_button_text": "Refresh",
+		"rollback_button_text": "Rollback",
+		"rollback_confirmation": {
+			"input_label": "Please tell us why enabling this advice did not work out for you: <i>– optional</i>",
+			"placeholder": "Start typing here...",
+			"title": "Please specify the reason"
+		},
+		"show_all_websites": "Show all {count} websites",
+		"show_less": "Show less",
+		"show_more": "Show more",
+		"terms_and_conditions": "Terms and Conditions",
+		"upgrade_button_text": "Upgrade",
+		"upgrade_subscription": "Upgrade subscription",
+		"upgrade_url_not_set_tooltip": "Please contact your hosting provider to upgrade.",
+		"website_search_placeholder": "Search",
+		"website_table_col_name": "Website"
+	},
+	"ERROR": {
+		"errWithoutMessage": "Unknown error occurred. Contact support for resolution.",
+		"expired_session": "It seems your session expired. Please log in to the platform. You will be redirected to login page.",
+		"not_available_plugin": "{pluginName} is not available. Please, contact your hoster.",
+		"undefined": "Undefined error",
+		"undefined_action": "Undefined action",
+		"wrong_received_data": "The received data is wrong. Contact support for resolution."
+	},
+	"Error": "Error",
+	"LANG_CODE": "en",
+	"SMART_ADVICE": {
+		"apply_advice": "Apply advice",
+		"rollback_title": "The advice was not applied",
+		"upgrade_to_apply_advice": "Upgrade to premium",
+		"wait_operation_finish_tooltip": "Please wait until previous operation finish"
+	},
+	"Show results": "Show results",
+	"Success": "Success",
+	"Try again": "Try again",
+	"UNAVAILABLE_PAGE": {
+		"back_to": "Back to",
+		"the_previous_page": "the previous page"
+	},
+	"please_wait_we_are_processing": "Please wait. We are processing..."
+}
