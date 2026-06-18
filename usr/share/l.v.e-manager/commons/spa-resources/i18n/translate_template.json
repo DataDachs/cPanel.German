@@ -1,0 +1,2029 @@
+{
+    "LANG_CODE": "en",
+    "ERROR": {
+        "lvemanagerFileMissingOrCorrupt": "Incorrect server response. Please contact your hoster.",
+        "not_available_plugin": "{pluginName} is not available. Please, contact your hoster.",
+        "not_available_passenger": "Apache Passenger is required by {pluginName}. Please, contact your hoster.",
+        "not_supported_kernel": "Resellers limits are only available for kernels starting with the version {resellerKernelVersion}.<br>If you want to use Reseller's limits, please update your kernel to the version {resellerKernelVersion} or higher.",
+        "not_supported_OS": "Resellers limits are only available for CL7 kernels starting with the version {resellerKernelVersion}.<br>If you want to use Reseller's limits, please update your kernel to CL6h with the version {resellerKernelVersion} or higher. <br>Follow the instruction to migrate from normal to hybrid kernel <a target='_blank' href='https://docs.cloudlinux.com/index.html?hybrid_kernel.html'>https://docs.cloudlinux.com/index.html?hybrid_kernel.html</a>.",
+        "wrong_received_data": "The received data is wrong. Contact support for resolution.",
+        "undefined": "Undefined error",
+        "expired_session": "It seems your session expired. Please log in to the platform. You will be redirected to login page.",
+        "undefined_action": "Undefined action",
+        "login_by_admin": "Please use Admin Level",
+        "errWithoutMessage": "Unknown error occurred. Contact support for resolution.",
+        "hittingAccountsLimitTitle": "Hosting accounts have exceeded the allowed limit.",
+        "hittingAccountsLimitDescription": "Review your hosting accounts to ensure compliance with the allowed limit for your edition. If you want to use the capabilities of the CloudLinux on a server with more accounts, you may consider using <a href='https://www.cloudlinux.com/cloudlinux-os-plus' target='_blank'>Cloudlinux OS Shared PRO</a>.",
+        "hittingAccountsLimitDescriptionSolo": "Your server is running CloudLinux OS Solo (limit: 1 account). To continue using CloudLinux features with more accounts, upgrade to CloudLinux OS Admin (up to 5 accounts). If you plan to host more than 5, consider CloudLinux OS Shared Pro.",
+        "hittingAccountsLimitDescriptionAdmin": "Your server is running CloudLinux OS Admin (limit: 5 accounts). To continue using CloudLinux features with more accounts, upgrade to CloudLinux OS Shared Pro.",
+        "hittingAccountsLimitCompactSolo": "You are using <b>CloudLinux OS Solo</b>, which allows only <b>1 account</b>.<br>More users were detected on this server than your plan permits.<br><br><b>What to do?</b><br><b>Option 1 — Stay on the current plan</b><br>Remove extra accounts so that only 1 user remains.<br><br><b>Option 2 — Need more users</b><br>Upgrade the license:<br>— <b>CloudLinux OS Admin</b> — up to 5 users<br>— <b>CloudLinux OS Shared Pro</b> — more than 5 users<br><br><b>How to upgrade the license?</b><br>1) Purchase a new license in <a href='https://cln.cloudlinux.com/' target='_blank'>CLN</a>. (Cancel the current license if needed.)<br>2) Log in to the server console as <b>root</b>.<br>3) Activate the license by type:<br>For activation key:<br><pre><code>rhnreg_ks --force --activationkey=&lt;NEW_KEY&gt;</code></pre><br>For IP-based:<br><pre><code>clnreg_ks --force</code></pre><br>If you purchased the license not directly through CLN, contact your reseller for upgrade assistance.",
+        "hittingAccountsLimitCompactAdmin": "You are using <b>CloudLinux OS Admin</b>, which allows only <b>5 accounts</b>.<br>More users were detected on this server than your plan permits.<br><br><b>What to do?</b><br><b>Option 1 — Stay on the current plan</b><br>Remove extra accounts so that no more than 5 users remain.<br><br><b>Option 2 — Need more users</b><br>Upgrade the license:<br>— <b>CloudLinux OS Shared Pro</b> — more than 5 users<br><br><b>How to upgrade the license?</b><br>1) Purchase a new license in <a href='https://cln.cloudlinux.com/' target='_blank'>CLN</a>. (Cancel the current license if needed.)<br>2) Log in to the server console as <b>root</b>.<br>3) Activate the license by type:<br>For activation key:<br><pre><code>rhnreg_ks --force --activationkey=&lt;NEW_KEY&gt;</code></pre><br>For IP-based:<br><pre><code>clnreg_ks --force</code></pre><br>If you purchased the license not directly through CLN, contact your reseller for upgrade assistance.",
+        "kernelIsNotSupportedTitle": "Reboot your system to update the kernel.",
+        "kernelIsNotSupportedDescription": "If this message is displayed after reboot, please contact <a href='https://cloudlinux.zendesk.com/hc/requests/new' target='_blank'>support</a>",
+        "cagefsDisabled": "Cannot manage PHP versions when CageFS is disabled",
+        "phpSelectorDisabled": "PHP Selector disabled",
+        "systemVersionAltPHP": "System default PHP version is alt-php. PHP Selector is disabled. Use cPanel MultiPHP manager instead"
+    },
+    "WARNING": {
+        "nativeWarning": "You have selected native PHP version. Changing PHP modules and options is impossible for the native version. You need to select a different PHP version from the dropdown above to enable PHP modules and options configuration.",
+        "limit_under_reseller": "This reseller’s end user is managed by reseller’s limits. Please, login as reseller to manage reseller’s end user limits.",
+        "package_under_reseller": "This reseller’s package is managed by reseller. Please, login as reseller to manage reseller’s package.",
+        "no_limits_to_change": "Nothing to edit yet: Your edition lacks LVE limits support, yet enabling Disk Quota on the server will allow for its management here",
+        "UserOfResellerManageWarning": {
+            "title": "Cannot manage Reseller Limits.",
+            "description": "This reseller’s end user is managed by Reseller Limits. Please, login as Reseller to manage reseller’s end user limits."
+        },
+        "PackageOfResellerManageWarning": {
+            "title": "Cannot manage Reseller Limits for package.",
+            "description": "This reseller’s package is managed by Reseller. Please, login as Reseller to manage reseller’s package."
+        },
+        "daemonScriptsRunWarning": {
+            "title": "Running daemon scripts in UI is not recommended.",
+            "description": "If you run daemon scripts, you will not be able to stop them from UI."
+        },
+        "portListenersWarning": {
+            "title": "Running scripts that listen to any port is not recommended.",
+            "description": "If you run scripts that listen to any port, they will be available only from server."
+        },
+        "packageJsonFileAbsent": "package.json file is required. Add package.json file to run \"npm install\"",
+        "disabledByHoster": {
+            "title": "The current version is disabled by hoster.",
+            "description": "In case you change the version, you will not be able to use it anymore."
+        },
+        "LimitsRestrictModeRequired": {
+            "title": "Available only when MySQL Governer restricted mode is set to limit."
+        },
+        "PeriodRestrictModeRequired": {
+            "title": "Available only when MySQL Governer restricted mode is set to period."
+        },
+        "mySqlGov_is_disabled": "MySQL governor is disabled in the system. Please, run \"service db_governor restart\" to start the service",
+        "mySqlGov_is_installing": "MySQL governor is installing in the system. Please wait service running.",
+        "switchSelector": "If you disable {interpreter}, all users won't be able to manage their applications",
+        "restriction_of_default_version": "It's impossible to remove default version. To remove default version set any other version as default.",
+        "restriction_of_moving_apps": "It's impossible to remove version with applications. Move all existing applications into another available version.",
+        "restriction_of_parallel_process": "One process of (un)installation has been executed already.",
+        "restriction_of_switch_version": "It's impossible to switch off default version.",
+        "governor_mode_all_deprecated": "MySQL Governor mode \"all\" was deprecated. Please use the \"abusers\" mode.",
+        "governor_mode_single_deprecated": "MySQL Governor mode \"single\" was deprecated. Please use the \"abusers\" mode.",
+        "manage_user_option_disabled_by_admin": "You cannot manage this option. Contact your administrator to enable it.",
+        "pythonApplication": {
+            "description": "Description",
+            "title": "Title"
+        }
+    },
+    "confirmationMessage": {
+        "default": "These changes will be saved. Are you sure you want it?",
+        "switchLimits": "Are you sure you want to {status} limits?",
+        "switchSelector": "Are you sure you want to make {selector} {status}?",
+        "switchVersion": "Switch default PHP version to {version}?",
+        "hidePhpExtensions": "Are you sure you want to hide php extensions?",
+        "showPhpExtensions": "Are you sure you want to show php extensions?",
+        "hideDomainsTab": "Are you sure you want to hide domains tab for users?",
+        "showDomainsTab": "Are you sure you want to show domains tab for users?",
+        "enableSelector": "Enable {selector} selector?",
+        "disableSelector": "Disable {selector} selector?",
+        "makeDefaultSelector": "Are you sure you want to change %(interpreter)s default version to %(version)s?",
+        "cancelWizardModule": "Are you sure you want to cancel installing %(module)s?",
+        "installSelector": "Are you sure you want to install %(interpreter)s %(version)s?",
+        "switchStatusOfSelector": "Are you sure you want to %(status)s %(interpreter)s %(version)s?",
+        "uninstallSelector": "Are you sure you want to uninstall<br>%(interpreter)s %(version)s?",
+        "moveApplicationsIntoAnotherNodeJsVersion": "By removing Node.js version (%(version)s) all applications must be removed in another available version.",
+        "removeApplication": "Are you sure you want to remove {appName} application?",
+        "removeEnvironment": "Are you sure you want to remove environment variable?",
+        "removeConfigFile": "Are you sure you want to remove confuguration file {name}?",
+        "migrateConfirmation": {
+            "title": "Migrate application",
+            "text": "Your application will be migrated to new Python selector. The process can take up to 30 seconds. Upon migration, you will get a confirmation.\n\nClick \"Migrate\" to start."
+        },
+        "change_cagefs_status_enable": "Enable CageFS for {number} user(s)?",
+        "change_cagefs_status_disable": "Disable CageFS for {number} user(s)?",
+        "toggle_cagefs_enable": "Enable CageFS for user {username}?",
+        "toggle_cagefs_disable": "Disable CageFS for user {username}?",
+        "change_isolation_status_allow": "Allow Site Isolation for {number} user(s)?",
+        "change_isolation_status_deny": "Deny Site Isolation for {number} user(s)?",
+        "toggle_isolation_allow": "Allow Site Isolation for user {username}?",
+        "toggle_isolation_deny": "Deny Site Isolation for user {username}?"
+    },
+    "INFO": {
+        "pythonVirtualEnv": {
+            "title": "Enter to the virtual environment.",
+            "text": "To enter to virtual environment, run the command: [[source {activatePath} && cd {userHomeDir}{app}]]"
+        },
+        "nodeVirtualEnv": {
+            "title": "Enter to the virtual environment.",
+            "text": "To enter to virtual environment, run the command: [[source {activatePath} && cd {userHomeDir}{app}]]"
+        },
+        "currentVersionIsDisabled": "The current version is disabled by hoster. In case you change the version, you will not be able to use it anymore.",
+        "versionWarning": "Some modules might be incompatible with different versions of Python.",
+        "EmailTemplatesPath": {
+            "title": "You can find email templates in: /usr/share/lve/emails/en_US folder",
+            "description": "To translate, create a copy of that folder for the desired locale."
+        },
+        "ResellerWithoutLimitsNotifications": {
+            "title": "Notifications for Reseller without limits will work with the same frequency as hoster notifications."
+        },
+        "SaveFilePathAndPeriod": {
+            "title": "Files are saved in /var/lve/dbgovernor-store and being kept for 10 days."
+        },
+        "noFoundApplication": "Application does not exist",
+        "noFoundReport": "Report does not exist",
+        "noFoundNodeJSVersions": "No alt-nodejs packages were found. Please check license and yum settings for repositories.",
+        "noFoundPythonVersions": "No alt-python packages were found. Please check license and yum settings for repositories.",
+        "noApplicationsFound": "No Applications found",
+        "PythonApplicationNeedMigrage": {
+            "title": "Legacy application mode",
+            "description": "Your application was created in legacy version of Cloudlinux selector and does not support all features. You can migrate your application by pushing button below. Please note, that migration may cause downtime."
+        },
+        "PythonApplicationChangeVersionLockedMessage": "This application was created in the legacy version of CloudLinux Python Selector and doesn't support all features. You cannot change the Python version and use all new features for this application until the user migrates this application to the new CLoudLinux Python Selector. See <a target=\"_blank\" href=\"https://docs.cloudlinux.com/python_selector\">here</a> for more details.",
+        "PythonAppMigrationSuccess": "Python App Migration Success",
+        "enterVirtualEnv": "Enter Virtual Env",
+        "pipInstallWarning": {
+            "description": "Description",
+            "title": "Title"
+        }
+    },
+    "DASHBOARD": {
+        "ModuleEnabled": "Enabled",
+        "ModuleDisabled": "Disabled",
+        "ModuleNotInstalled": "Not installed",
+        "ModuleInstalled": "Installed",
+        "Nodejs": "Allows end users to select the specific version of Node.js they need.",
+        "Ruby": "Allows end users to select the specific version of Ruby they need.",
+        "Resellers": "Limits resources (CPU, IO, memory, etc) per each reseller. Resellers can limit resources for their end users.",
+        "Governor": "Monitors MySQL usage to throttle abusers, preventing server overload and improving overall performance.",
+        "Cagefs": "A virtualized per-user file system encapsulates each customer into a ‘cage’ preventing them from seeing each other and viewing sensitive information.",
+        "Python": "Allows end users to select the specific version of Python they need.",
+        "Modlsapi": "Fastest and most reliable way to serve PHP pages, a drop-in replacement for SuPHP, FCGID, RUID2, and ITK.",
+        "PHP": "Allows end users to select the specific version of PHP they need, with over 120 PHP extensions to choose from.",
+        "welcomeMessage": {
+            "title": "Thank you for using CloudLinux OS!",
+            "description": "There is no data collected for your server yet. You can update now with the \"Refresh\" button. This can last between 10 seconds and 1 hour, depending on server load, users and applications."
+        },
+        "RefreshDataHint": {
+            "title": "Dashboard data is collected daily.",
+            "description": "To update manually, press \"Refresh\". This can last between 10 seconds and 1 hour, depending on server load, users and applications."
+        },
+        "StolenLicence": {
+            "title": "CloudLinux OS license failure.",
+            "description": "Your CloudLinux OS license is used on another server. Please contact our support team to solve this issue."
+        },
+        "StatCollectionOff": {
+            "title": "Statistics collection is off.",
+            "description": "Collecting of statistics is turned off on your server. To activate daily statistics for your server, run command [[cloudlinux-summary enable]]."
+        },
+        "ServerUnavailable": {
+            "title": "Server unavailable",
+            "description": "There is a problem getting statistics for the dashboard from online databases. Please try again later."
+        },
+        "RefreshData": {
+            "title": "Dashboard data is collected daily and can be outdated!",
+            "description": "Please <strong>refresh dashboard</strong> to get relevant data"
+        },
+        "RefreshingData": {
+            "title": "Refresh is in progress.",
+            "description": "This can last between 10 seconds and 1 hour, depending on server load, users and applications."
+        },
+        "lastUpdateResult": "Result of the last update",
+        "refreshModalMessage": "It normally takes 10 seconds -  one hour depending on server perfomance, count of users and applications.",
+        "lastUpdateWas": "Last update was:",
+        "refreshDashboard": "Refresh dashboard",
+        "retry": "Retry",
+        "loading": "Loading...",
+        "modalHeader": "Are you sure you want to refresh data?",
+        "statisticCollected": "Statistics collected {time}",
+        "statisticIsAbsent": "Statistic was not collected yet",
+        "STATUS": {
+            "Enabled": "Enabled",
+            "Disabled": "Disabled",
+            "Malfunction": "Malfunction",
+            "Installed": "Installed",
+            "Configured": "Configured",
+            "Not installed": "Not installed",
+            "Not initialized": "Not initialized",
+            "Skipped": "Skipped",
+            "Error": "Error",
+            "Unknown": "Unknown",
+            "None": "None",
+            "Queued": "Queued",
+            "Installation failed": "Installation failed",
+            "Configuration failed": "Configuration failed",
+            "Installing": "Installing",
+            "Configuring": "Configuring"
+        },
+        "HINT": {
+            "php_selector": "PHP related issues detected. Click the «Manage» button for more details.",
+            "mysql_governor": "MySQL governor is not configured properly. Please configure MySQL Governor according to documentation https://docs.cloudlinux.com/control_panel_integration/#mysql-governor. <br> <b>Note: Dashboard data is collected daily and can be outdated! Please refresh dashboard to get relevant data.</b>"
+        },
+        "lastSendingFailed": "Last Sending Failed"
+    },
+    "WIZARD": {
+        "Nodejs": "Node.js Selector is a CloudLinux component that allows each user to easily create Node.js applications, choose Node.js version and other parameters for applications based on their needs.",
+        "Ruby": "Allows end users to select the specific version of Ruby they need.",
+        "Resellers": "Limits resources (CPU, IO, memory, etc) per each reseller. Resellers can limit resources for their end users.",
+        "Governor": "MySQL Governor is software to monitor and restrict MySQL usage in shared hosting environment. The monitoring is done via resource usage statistics per each MySQL thread.",
+        "Cagefs": "CageFS is a virtualized file system and a set of tools to contain each user in its own 'cage'. Each customer will have its own fully functional CageFS, with all the system files, tools, etc. The CageFS is required for PHP Selector.",
+        "Python": "Allows end users to select the specific version of Python they need.",
+        "Modlsapi": "This is an Apache module based on LiteSpeed Technologies API for PHP. It offers excellent PHP performance, low memory footprint coupled with great security and support for opcode caching",
+        "PHP": "This section lets you configure the PHP interpreters and PHP Selector, both CloudLinux components that sit on top of CageFS. Users can select their own PHP versions and modules. The PHP Selector requires an enabled CageFS account.",
+        "WelcomeHeader": "Thank you for installing CloudLinux OS!",
+        "WelcomeDescription": "Thank you for installing CloudLinux OS. This wizard will help you configure all of its components.",
+        "SkipConfirmation": "Are you sure you want to skip configuration?"
+    },
+    "SUPPORT": {
+        "attachFile": "Attach files",
+        "orMoveFile": "or drag it here",
+        "virtualAssistant": {
+            "maintenance": {
+                "title": "Virtual Assistant is under maintenance",
+                "description": "Please use Support Portal for any information you need, or create a ticket through Zendesk.",
+                "portalLink": "Support Portal",
+                "ticketLink": "Create Zendesk ticket"
+            }
+        }
+    },
+    "currentPHPVersion": "Current PHP version",
+    "PHPVersion": "Current PHP version",
+    "setAsCurrent": "Set as current",
+    "apply": "Apply",
+    "phpVersionCaptionItem": "{version} {modifier}",
+    "phpVersionCaptionItemCurrent": "{version} (current{modifier})",
+    "useDefault": "Reset to default",
+    "switchToPHPExtensions": "Switch to PHP extensions",
+    "switchToPHPOptions": "Switch to PHP options",
+    "settingsSaved": "Switch to PHP options",
+    "FollowRPMInstructions": "Follow the instructions from <a href='https://cloudlinux.zendesk.com/hc/en-us/articles/115004075294-Fix-rpmdb-Thread-died-in-Berkeley-DB-library' target='_blank'> documentation </a>",
+    "Can't run %(command)s": "Can't run %(command)s",
+    "dashboardIsUpdating": "Refresh in progress, can take up to 60 minutes",
+    "%(days)s days": "%(days)s days",
+    "By Username": "Username",
+    "By Domain": "Domain",
+    "applicationsCounts": "Running applications/all applications",
+    "applicationsCountAll": "All applications",
+    "users count": "users",
+    "ERROR: please install or reinstall cagefs": "CageFS package is not installed. Please refer to this  <a target=\"_blank\" href=\"{cagefs}\">{cagefs}</a> for installation instructions.",
+    "Collecting statistics was failed. Error report has been sent to developers and will be fixed soon": "Collecting statistics was failed. Error report has been sent to developers and will be fixed soon. If you need help - please contact our support at https://cloudlinux.zendesk.com/hc/requests/new",
+    "restrictedUser": "{{reason}}. Restricted for next {{time}} seconds.",
+    "Please, login as reseller to manage reseller’s end user limits": "Please, log in as reseller to manage reseller’s end user limits",
+    "%(what)s set error for package=%(package)s%(error)s": "Setting of limits %(error)s for package %(package)s caused the error.",
+    "%(what)s set error for uid=%(uid)s%(error)s": "Setting of limits %(error)s for user %(uid)s caused the error.",
+    " [error: Speed limit error]": "SPEED",
+    "Manage_users": "Manage",
+    "Manage_packages": "Manage",
+    "Using [v2]": "Using",
+    "Average SPEED [v2]": "Average SPEED",
+    "Average MySQL SPEED [v2]": "Average MySQL SPEED",
+    "Average IO [v2]": "Average IO",
+    "Average MySQL IO [v2]": "Average MySQL IO",
+    "Average IOPS [v2]": "Average IOPS",
+    "Average EP [v2]": "Average EP",
+    "Average NPROC [v2]": "Average NPROC",
+    "Average PMEM [v2]": "Average PMEM",
+    "Average VMEM [v2]": "Average VMEM",
+    "Threshold [v2]": "Threshold",
+    "noVersionsEnabled": "Cannot create an application. No {{interpreter}} version is available. Please contact your hoster.",
+    "collectDataError": "Collecting this information was failed. Error report has been sent to developers and will be fixed soon",
+    "moduleSaved": "Module {{extension}} saved",
+    "moduleDefaultSaved": "Module set saved",
+    "optionSaved": "Option {{option}} successfully saved",
+    "readonly": "Read only",
+    "passengerLogFileDescription": "You can define the path along with the filename (e.g. {userHomeDir}logs/passenger.log)",
+    "restrictionScriptDescription": "To be triggered when account is restricted. Example: {{path}}",
+    "logFilePathDescription": "Where the log file is placed in the file system. Example: {{path}}",
+    "killedQueriesLogDescription": "Log file URL, where killed queries will be saved. Example: {{path}}",
+    "RESOURCE_USAGE": {
+        "cpu_limited": "CPU resources limit was reached for your site",
+        "vmem_limited": "Virtual memory resources limit was reached for your site",
+        "pmem_limited": "Physical memory resources limit was reached for your site",
+        "ep_limited": "You have reached the entry processes (the number of simultaneously running php and cgi scripts, as well as cron jobs and shell sessions) limit {{faults}} times",
+        "nproc_limited": "You have reached the processes number limit {{faults}} times",
+        "io_limited": "I/O usage resources limit was reached for your site",
+        "iops_limited": "I/O operations per second limit was reached for your site",
+        "cpu_soon_limited": "Your CPU usage was at {{usage}} out of {{limit}}",
+        "vmem_soon_limited": "Your Virtual Memory usage was at {{usage}} out of {{limit}}",
+        "pmem_soon_limited": "Your Physical Memory usage was at {{usage}} out of {{limit}}",
+        "ep_soon_limited": "You had {{usage}} entry processes (number of simultaneously running php and cgi scripts, as well as cron jobs and shell sessions) out of {{limit}} max entry processes allowed",
+        "nproc_soon_limited": "You had {{usage}} processes out of {{limit}} max processes allowed",
+        "io_soon_limited": "You had {{usage}} I/O usage out of {{limit}} max I/O usage allowed",
+        "iops_soon_limited": "You had {{usage}} I/O operations per second out of {{limit}} max I/O operations per second allowed"
+    },
+    "Selected_items_range": "{start}-{end} / {total} item(s)",
+    "Selected_items": "Selected: {selected} / {total} item(s)",
+    "Select_all_items": "Select all {total} item(s)",
+    "All pages": "All",
+    "ChangeDomainPHPVersionConfirmationAdmin": "PHP version will be changed to the system default for selected domain in MultiPHP Manager (PHP-FPM will be disabled). User's website will use the version set in CloudLinux PHP Selector ({{version}}).",
+    "ChangeDomainPHPVersionConfirmationUser": "PHP version will be changed to the system default for selected domain in MultiPHP Manager. User's website will use the version set in CloudLinux PHP Selector ({{version}}).",
+    "ChangeDomainPHPVersionConfirmationAdminGroup": "PHP version will be changed to the system default for selected domains in MultiPHP Manager (PHP-FPM will be disabled). Users' websites will use the version set in CloudLinux PHP Selector.",
+    "ChangeDomainPHPVersionConfirmationUserGroup": "PHP version will be changed to the system default for selected domains in MultiPHP Manager. Users' websites will use the version set in CloudLinux PHP Selector ({{version}}).",
+    "DomainWarning": {
+        "phpFpmEnabled": "Ask the hoster to switch off PHP-FPM for domains and set current version to system version",
+        "nativeVersion": "Select any other version than native for using all functionality of CL PHP Selector",
+        "nativeUserVersion": "User should select any other version than native for using all functionality of CL PHP Selector",
+        "useMultiPHP": "Choose not system PHP version in MultiPHP Manager",
+        "eaVersionRequired": "ea-php version is required to be selected in cPanel MultiPHP Manager for PHP Selector to operate",
+        "cageFsNotInitialized": "PHP Selector cannot be activated for this domain. Initialize CageFS in the Options tab first",
+        "cageFsDisabled": "PHP Selector cannot be activated for this domain. Enable CageFS in the Options tab first",
+        "userNotInCageFs": "PHP Selector cannot be activated for this domain. Enable CageFS for this user in the Users tab first",
+        "eaVersionUnavailable": "Default ea-php version should be enabled by admin in Feature manager. Or you can try to set inherited version for domain in Cpanel PHP Manager",
+        "phpHasErrors": "Some PHP related issues need to be resolved in order to enable domain management. Find the list of PHP related issues that prevent domain management above."
+    },
+    "cldiagInProgressMessage": "Checking server for common PHP related issues...",
+    "showInstallErrorLog": "|See the log| for the details.",
+    "WMT": {
+        "noEmailWarning": "An email was not set.",
+        "systemEmailUsed": "The system administrator's email {defaultEmail} will be used.",
+        "settings": {
+            "emailToReport": "Email to send daily report",
+            "switchWebsiteMonitoring": {
+                "title": "Website monitoring",
+                "description": "Monitoring of all websites by response status."
+            },
+            "summaryNotification": {
+                "title": "Enable summary notifications",
+                "description": "The report is sent once a day."
+            },
+            "alertNotification": {
+                "title": "Enable alert notifications",
+                "description": "The report is sent when a site is not responsive or has some issues."
+            },
+            "domainsAndUrlsIgnoreList": {
+                "title": "Domains and URLs Ignore List",
+                "description": "Specify a comma-separated list of URLs or domains that should be excluded from the daily report. Wildcards are also supported (for example: *.staging.com – this will ignore all subdomains of staging.com)."
+            },
+            "topWebsitesToShow": {
+                "title": "Top N slow websites to show",
+                "description": "Set the number of top slow websites to show in the “Main“ report."
+            },
+            "checkInterval": {
+                "title": "Check every X minutes",
+                "description": "Set the interval in minutes for the requests sending to the same domain."
+            },
+            "allowedTimeForResponse": {
+                "title": "Time allowed for response",
+                "description": "Set the domain response timeout in seconds."
+            },
+            "concurrentRequestsLimit": {
+                "title": "Concurrent requests limit",
+                "description": "Set the number of concurrent requests."
+            }
+        }
+    },
+    "SSA": {
+        "settings": {
+            "switchPHPSitesAnalyzer": {
+                "title": "PHP Sites Analyzer",
+                "description": "Detailed analyzer for PHP websites."
+            },
+            "summaryNotifications": {
+                "title": "Enable summary notifications",
+                "description": "The report is sent once a day."
+            },
+            "topSlowWebsites": {
+                "title": "Top N slow websites to show",
+                "description": "Set the number of top slow websites to show in the “PHP Sites Analyzer“ report."
+            },
+            "topSlowUrls": {
+                "title": "Top slow URLs",
+                "description": "Set the number of the top slow URLs to be included in the “PHP Sites Analyzer“ report."
+            },
+            "slowRequestDuration": {
+                "title": "Slow request duration",
+                "description": "Set the duration in seconds to mark request as a slow one."
+            },
+            "slowRequestsNumber": {
+                "title": "Slow requests number",
+                "description": "Number of slow requests in the period of time to mark the URL as a slow one."
+            },
+            "analysisTime": {
+                "title": "Analysis time",
+                "description": "Set the period of time in hours required to analyze slow requests."
+            },
+            "slowRequestsDensityThresholdEnable": {
+                "title": "Enable slow requests density threshold",
+                "description": "Turn on/off slow requests density threshold"
+            },
+            "slowRequestsDensityThreshold": {
+                "title": "Slow requests density threshold",
+                "description": "Set the threshold value for request density in the range [0, 1]; the default is 0.8. This parameter helps filter slow requests, keeping only those that occur most frequently and have the greatest impact on website performance. The lower the value, the report will include more requests, including rare ones. The higher the value, the filtering will be stricter, keeping only the most frequent requests, as they are the most important for optimization."
+            },
+            "domainsAndUrlsIgnoreList": {
+                "title": "Domains and URLs Ignore List",
+                "description": "Specify a comma-separated list of URLs or domains that should be excluded from the daily report. Wildcards are also supported (for example: *.staging.com – this will ignore all subdomains of staging.com)."
+            }
+        }
+    },
+    "VALIDATORS": {
+        "requiredField": "Mandatory field.",
+        "invalidEmail": "Email is not valid.",
+        "invalidStringLength": "The length should be in range {min}-{max}."
+    },
+    "TAB_DESCRIPTION": {
+        "wmt": {
+            "title": "What is website monitoring?",
+            "description": "Website monitoring tool is a report with the statistics of the domains' availability and responsiveness, as well as errors that occur when accessing these domains."
+        },
+        "ssa": {
+            "title": "What is PHP Slow Site analyzer",
+            "description": "Slow Site analyzer tracks all PHP-based requests and selects slow ones by certain rules."
+        },
+        "xray": {
+            "title": "What is X-Ray?",
+            "description": "X-Ray gathers and visualizes information about slowest system functions, external requests, software modules, and database queries of the client’s website. This information can help you to analyze website performance issues.</br><b>If AccelerateWP is installed, X-Ray Smart Advice will generate suggestions for performance improvements, allowing clients to activate features that help resolve them.</b>"
+        }
+    },
+    "AWP": {
+        "awpFeatureModalTitle": "Feature",
+        "awpFeatureTooltip": "Feature enable",
+        "awpFeatureModalNote": "While no SmartAdvice has been generated for this website, you may enable these features manually as they are likely to improve performance.",
+        "awpFeaturePendingNote": "Your payment was successful. The premium features you enabled will be applied to your WordPress website in several minutes. To check if features were applied, please refresh the page. You can close this window.",
+        "misconfigurationTooltip": "Misconfigurations between your website and this module",
+        "incompatibilityTooltip": "The website is incompatible with this module",
+        "errorLogTooltip": "The error occurs while managing the module for this website",
+        "leaveFeedbackLinkText": "Leave a feedback",
+        "warningReadOnlyMode": "Advice can only be accepted and installed in the end user interface",
+        "rollbackConfirmation": {
+            "inputLabel": "Please tell us why enabling this advice did not work out for you: <i>– optional</i>",
+            "placeholder": "Start typing here..."
+        },
+        "billing": {
+            "upgradeSubscription": "Upgrade subscription",
+            "upgradeYourSubscription": "Upgrade your subscription",
+            "askAdminForUpgrade": "To continue you need to have a subscription. <br>Please contact your administrator to upgrade the subscription."
+        },
+        "module_object_cache": {
+            "name": "Object cache",
+            "shortDescription": "Stores database query results in additional storage for quick access."
+        },
+        "awpPremiumTooltip": "AccelerateWP premium advice",
+        "activateWizard": {
+            "title": "AccelerateWP is not activated for users on this server",
+            "description": "Your CloudLinux OS Shared Pro license now includes AccelerateWP for unlimited users.",
+            "forThisServer": "Activate for this server",
+            "forAllServers": "Activate on all servers",
+            "willRedirectToCLN": "You will be redirected to the CLN to activate"
+        }
+    },
+    "AUTOTRACING": {
+        "enableTitle": "Enable Autotracing",
+        "shortDescription": "Mechanism that automatically creates PHP X-Ray tracing tasks per day for slow URLs that were found during a day by PHP Site Analyzer. It can provide a more detailed report of existing issues on the site. <a href='https://docs.cloudlinux.com/cloudlinux-os-plus/#x-ray-autotracing' target='_blank'>See details</a>."
+    },
+    "SMART_ADVICE": {
+        "ACTION_OBJECT_CACHE": "Turn on caching",
+        "ACTION_SITE_OPTIMIZATION": "Turn on AccelerateWP",
+        "rollbackTitle": "The advice was not applied",
+        "waitOperationFinishTooltip": "Please wait until previous operation finish",
+        "applyAdvice": "Apply advice",
+        "upgradeToApplyAdvice": "Upgrade to apply"
+    },
+    "LINKING_TO_CLN": {
+        "successfullyLinked": "Server successfully linked to CLN",
+        "linkNowTitle": "Link your server to CLN now",
+        "linkNowDescription": "You can link all your servers to a shared group to monitor the load of servers and users in Centralized Monitoring via <a href=\"https://cm.cloudlinux.com/\" target=\"_blank\">https://cm.cloudlinux.com/</a>. You can also use PHP X-Ray, AccelerateWP, Smart Advice and all Shared PRO functionality. Please find more details <a href=\"https://docs.cloudlinux.com/cloudlinux-os-plus\" target=\"_blank\">here</a>",
+        "linkNowHint": "*To link your servers you need a CLN account. If you don't have please create it <a href=\"https://cln.cloudlinux.com/console/register/customer\" target=\"_blank\">here</a>.",
+        "linkServer": "Link server"
+    },
+    "INSTALLATION": {
+        "everythingReadyTitle": "Everything is ready to install the product.",
+        "detailsBelowTitle": "The installation details are provided below",
+        "installingButton": "Installing...",
+        "stoppedButton": "Stopped",
+        "retryButton": "Retry",
+        "cancelWarning": "The installation was cancelled. You can restart installation clicking 'Retry' button or you can install manually via <a href=\"https://docs.cloudlinux.com/cloudlinux_installation/#converting-existing-servers\" target=\"_blank\">CLI</a>. The activation key was sent to your email.",
+        "installingApproximateTime": "It normally might take from 10 minutes to 1 hour",
+        "footerWarningHead": "Fix the issues shown and use the",
+        "footerWarningTail": "button to restart the installation.",
+        "footerWarningSecond": "If it fails, please contact our Support button to restart the installation.",
+        "slideWizard": {
+            "title": "Wizard",
+            "description": "CloudLinux OS Installation Wizard helps you to easily install and set up CloudLinux OS components on your server with cPanel, Plesk or DirectAdmin."
+        },
+        "slideDashboard": {
+            "title": "Dashboard",
+            "description": "CloudLinux Dashboard provides a quick overview of statistics and all administrative information for server administrators. From Dashboard you can quickly get information about End Users and Resellers hitting limits."
+        },
+        "slideCurrent": {
+            "title": "Current usage",
+            "description": "The Current usage tab provides the information on the usage of Speed, memory, IO, IOPS, Number of Processes, and Entry Processes for all users."
+        },
+        "slideStatistics": {
+            "title": "Statistics",
+            "description": "The Statistics tab shows end users, resellers and resellers’ end users limits usage statistics."
+        },
+        "slideOptions": {
+            "title": "Options",
+            "description": "The Options tab allows you to manage all the features and settings shipped within CloudLinux Manager."
+        },
+        "slidePackages": {
+            "title": "Packages",
+            "description": "The Packages tab allows setting the limits for as many users as you need by editing packages of proper limits."
+        },
+        "slideSelector": {
+            "title": "Selector",
+            "description": "The Selector Selector allows administrators to manage PHP versions for users and allows end-users to select the specific version of PHP they need. It allows ultimate flexibility by offering all popular versions of PHP, with more than 120 PHP extensions to choose from."
+        },
+        "slideWmt": {
+            "title": "Website monitoring",
+            "description": "Website monitoring enables sysadmins to monitor all their servers, determine the load on each one, and identify the users creating the most load. If a domain is using an inordinate amount of CPU, memory, or disk resources, this tool helps bring it under control."
+        },
+        "slideXray": {
+            "title": "X-Ray",
+            "description": "PHP X-Ray provides detailed information on performance bottlenecks that involve the CMS. If a site has sluggish plugins, database queries, functions, or external calls, this new tool helps pinpoint the underlying problem.\nIdentifies slow database queries\nDetects slow WP plugins and suboptimal code \nPrevents irrational usage of external requests"
+        },
+        "slideUserResourceUsage": {
+            "label": "End-user Plugins",
+            "title": "Resource usage",
+            "description": "Client Resource Usage plugin for cPanel, Plesk, and DirectAdmin allows host’s end users to view and monitor resource usage."
+        },
+        "slideUserPHPSelector": {
+            "label": "End-user Plugins",
+            "title": "PHP Selector",
+            "description": "PHP Selector allows end-users to select the specific version of PHP they need. It allows ultimate flexibility by offering all popular versions of PHP, with more than 120 PHP extensions to choose from."
+        },
+        "notInstalled": "The license is not installed",
+        "buyLicense": "Buy a license",
+        "goToManager": "Go to Cloudlinux Manager",
+        "completeTitle": "Thank you for installing CloudLinux OS!",
+        "completeDescription": "Please <b>reboot your system</b> to update the kernel.<br>If this message is displayed after the reboot, please contact support via <a target='_blank' href='https://www.cloudlinux.com/support-portal'>Support Portal</a>",
+        "installedDescription": "Now you can use all functionality provided by CloudLinux OS. Click the button below and go to the Cloudlinux Manager plugin. If you have any question, please contact support via <a target='_blank' href='https://www.cloudlinux.com/support-portal'>Support Portal</a>",
+        "installedNoManager": "To use all functionality provided by CloudLinux OS, please follow the instruction from the <a target='_blank' rel='noopener noreferrer' href='https://docs.cloudlinux.com/lve_manager'>documentation</a> and install the CloudLinux Manager plugin",
+        "managerWillBeInstalled": "The \"CloudLinux Manager\" extension will be installed. Use this extension to manage all features provided by CloudLinux OS. <a target='_blank' rel='noopener noreferrer' href='https://docs.cloudlinux.com/lve_manager'>More details.</a>",
+        "unsupportedTitle": "Unfortunately, plugin doesn’t support your OS",
+        "unsupportedDescription": "Please read more about operation system that we support",
+        "unsupportedLinkText": "Learn more"
+    },
+    "DARK_MODE": {
+        "switchDarkMode": "Switch dark mode",
+        "darkModeInherited": "Dark mode is inherited and cannot be changed"
+    },
+    "LIMIT_TOOLTIP": {
+        "SPEED": "Limits CPU usage relative to a single core or in Hz. Ensures fair CPU distribution among users.",
+        "PMEM": "Sets the maximum amount of physical memory (RAM) a user can use, including shared memory and disk cache.",
+        "VMEM": "Limits the total virtual memory (VIRT in top) processes can allocate within LVE (Lightweight Virtual Environment). Note: It is recommended to disable VMEM limits (set them to 0) in your system at all because they are deprecated in CloudLinux OS 6 and 7 system and can cause unexpected issues.",
+        "IO": "Defines the maximum disk input/output (I/O) speed for a user, combining both read and write operations.",
+        "IOPS": "Limits the number of read/write operations per second to prevent excessive disk load.",
+        "EP": "Controls the number of concurrent entry processes, affecting web connections (Apache, Nginx), SSH, and cron jobs.",
+        "NPROC": "Defines the maximum number of processes a user can run simultaneously within their LVE (Lightweight Virtual Environment).",
+        "INODES": "Restricts the total number of files and directories a user can create, controlling file system usage."
+    },
+    "UI": {
+        "buyAdmin": "Buy CloudLinux OS Admin",
+        "buySharedPro": "Buy CloudLinux OS Shared Pro",
+        "goToLicense": "Go to License",
+        "learnMore": "Learn more"
+    },
+    "all": "All",
+    "Filter": "Filter",
+    "Close": "Close",
+    "User": "User",
+    "Domain": "Domain",
+    "PHP Mode": "PHP Mode",
+    "Handled by": "Handled by",
+    "Action": "Action",
+    "Actions": "Actions",
+    "cPanel MultiPHP Manager": "cPanel MultiPHP Manager",
+    "CloudLinux PHP Selector": "CloudLinux PHP Selector",
+    "PHP FPM": "PHP FPM",
+    "PHP version": "PHP version",
+    "Extensions": "Extensions",
+    "Options": "Options",
+    "Use PHP Selector": "Use PHP Selector",
+    "Use MultiPHP Manager": "Use MultiPHP Manager",
+    "Show domains": "Show domains",
+    "Search by domain": "Search by domain",
+    "Search by domain or user": "Search by domain or user",
+    "Available to use CloudLinux PHP Selector": "Available to use CloudLinux PHP Selector",
+    "Managed by": "Managed by",
+    "Cancel selection": "Cancel selection",
+    "CageFS": "CageFS",
+    "Enable": "Enable",
+    "Disable": "Disable",
+    "Allow": "Allow",
+    "Deny": "Deny",
+    "Cancel": "Cancel",
+    "Confirm": "Confirm",
+    "Agree": "Agree",
+    "PHP_SELECTOR": {
+        "managed_by_cpanel": "Managed by cPanel",
+        "managed_by_cl_selector": "Managed by CL PHP Selector",
+        "ready_to_use_cl_selector": "Ready to use CloudLinux PHP Selector",
+        "ready_to_use_selector": "Ready to use PHP Selector",
+        "reset_extensions_to_default": "Reset PHP Extensions to default",
+        "php_version_changed": "PHP version changed",
+        "users_matched": "{{count}} of {{total}} user(s) matched",
+        "users_count": "{{total}} user(s)",
+        "account_php_settings": "Account PHP Settings",
+        "enable_isolation_action": "Enable Isolation",
+        "disable_isolation_action": "Disable Isolation",
+        "reset_to_account_defaults": "Reset to Account Defaults",
+        "domain_modal_info": "PHP version, extensions and options for this domain. Changes are independent from your account-level settings.",
+        "transfer_control_warning": "To use CloudLinux PHP Selector for these domains you can transfer control using the table below.",
+        "show_domains": "Show_domains"
+    },
+    "Items per page: ": "Items per page: ",
+    "SITE_ISOLATION": {
+        "status_changed": "Site Isolation status changed!",
+        "settings_saved": "Site Isolation settings saved!",
+        "domain_status_changed": "Domain isolation status changed!",
+        "isolation_enabled": "Isolation enabled!",
+        "isolation_disabled": "Isolation disabled!",
+        "domain_reset_to_defaults": "Domain reset to account defaults!",
+        "non_cl_domains_warning": "{{count}} domain(s) don't use CloudLinux PHP Selector — isolation will not be effective until they are switched: {{domains}}",
+        "info_banner_with_isolation": "Domains grouped by user. Expand a user to see all their domains, isolation status, and PHP configuration.",
+        "info_banner_without_isolation": "Domains grouped by user. Expand a user to see all their domains and PHP configuration.",
+        "options_info_banner": "Site Isolation allows individual websites to run in isolated CageFS environments with their own PHP configuration. Enable this feature per-user to allow them to isolate their domains.",
+        "allowed": "Allowed",
+        "denied": "Denied",
+        "isolated": "Isolated",
+        "not_isolated": "Not Isolated",
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "per_domain": "PER-DOMAIN",
+        "account_global": "ACCOUNT GLOBAL",
+        "switch_to_php_selector": "Switch to PHP Selector",
+        "switch_to_multiphp": "Switch to MultiPHP",
+        "search_placeholder": "Search by user or domain...",
+        "expand_user": "Expand user {{username}}",
+        "allow_for_all_users_label": "Allow Site Isolation for all users (current + future)",
+        "all_users_allowed": "All users allowed",
+        "all_users_denied": "All users denied",
+        "mixed_some_allowed": "Mixed (some users allowed)",
+        "cl7_unsupported": "Website Isolation is not available on CloudLinux 7. We recommend migrating to CloudLinux 8 or later to use this feature.",
+        "platform_unsupported": "Website Isolation is not available on this platform.",
+        "filter_allowed": "Isolation: Allowed",
+        "filter_denied": "Isolation: Denied",
+        "filter_has_isolated": "Has isolated domains",
+        "denied_by_admin": "Site Isolation has been denied by your server administrator. Isolation toggles are disabled. Contact your hosting provider for more information.",
+        "tooltip_allowed_click_deny": "Site Isolation: Allowed — click to deny",
+        "tooltip_denied_click_allow": "Site Isolation: Denied — click to allow",
+        "aria_allowed": "Site Isolation: Allowed",
+        "aria_denied": "Site Isolation: Denied",
+        "per_domain_settings": "Per Domain Settings",
+        "domains_that_use": "Domains that use:",
+        "isolated_domains": "Isolated domains",
+        "not_isolated_domains": "Not isolated domains",
+        "bulk_actions": "Bulk actions:",
+        "enable_isolation_for_all": "Enable Isolation for All",
+        "disable_isolation_for_all": "Disable Isolation for All",
+        "isolation_label": "Isolation",
+        "isolated_count": "isolated",
+        "domains_count": "domain(s)",
+        "site_isolation": "Site Isolation",
+        "inherited": "INHERITED",
+        "account_default": "account default",
+        "cagefs_php_selector": "CageFS + PHP Selector",
+        "account_global_settings_tab": "Account Global Settings",
+        "per_domain_settings_tab": "Per Domain Settings",
+        "account_settings_banner_prefix": "These settings apply to all your domains by default. To override settings for a specific domain, go to ",
+        "account_settings_banner_suffix": " tab.",
+        "info_banner_main_html": "<strong>Site Isolation</strong> activates <strong>CageFS per site</strong> and <strong>PHP Selector per site</strong> for a domain — the site gets its own filesystem isolation and independent PHP configuration.",
+        "info_banner_without_isolation_prefix": "Domains without isolation use your ",
+        "info_banner_global_settings_link": "Account Global Settings",
+        "info_banner_without_isolation_suffix": ". When isolation is enabled, the domain inherits your current account settings — further changes are independent."
+    },
+    "# of errors": "# of errors",
+    "%(version)s (recommended)": "%(version)s (recommended)",
+    "AccelerateWP is not installed.": "AccelerateWP is not installed.",
+    "Activate": "Activate",
+    "Add": "Add",
+    "Add variable": "Add variable",
+    "Advice": "Advice",
+    "Applied Smart Advice": "Applied Smart Advice",
+    "Apply": "Apply",
+    "Auto-refresh": "Auto-refresh",
+    "Available suggestions": "Available suggestions",
+    "Back to": "Back to",
+    "By": "By",
+    "By fault": "By fault",
+    "By usage": "By usage",
+    "CMD": "CMD",
+    "CageFS is not initialized. Go to Options tab and initialize the CageFS.": "CageFS is not initialized. Go to Options tab and initialize the CageFS.",
+    "CageFS is not installed": "CageFS is not installed",
+    "Cancelling...": "Cancelling...",
+    "Change&#x00A0;version": "Change&#x00A0;version",
+    "Choose default modules for": "Choose default modules for",
+    "Choose script": "Choose script",
+    "Choose snapshot": "Choose snapshot",
+    "Choose versions to install": "Choose versions to install",
+    "Close wizard": "Close wizard",
+    "Closing...": "Closing...",
+    "CloudLinux OS is not registered yet.": "CloudLinux OS is not registered yet.",
+    "CloudLinux customer support": "CloudLinux customer support",
+    "Completed": "Completed",
+    "Component already configured": "Component already configured",
+    "Configure your CloudLinux OS": "Configure your CloudLinux OS",
+    "Contact support for more information": "Contact support for more information",
+    "Continue With CloudLinux manager": "Continue With CloudLinux manager",
+    "Create application": "Create application",
+    "Current usage": "Current usage",
+    "Date range": "Date range",
+    "Default php version": "Default php version",
+    "Default version": "Default version",
+    "Delete": "Delete",
+    "Delete&#x00A0;version": "Delete&#x00A0;version",
+    "Destroy": "Destroy",
+    "Details": "Details",
+    "Do not limit": "Do not limit",
+    "Do you have an idea?": "Do you have an idea?",
+    "Domains that use:": "Domains that use:",
+    "Done": "Done",
+    "Download last CageFS log": "Download last CageFS log",
+    "Download log": "Download log",
+    "Downloading...": "Downloading...",
+    "Duration": "Duration",
+    "Edit": "Edit",
+    "Enable Selector": "Enable Selector",
+    "Endusers hitting limits": "Endusers hitting limits",
+    "Failed to install AccelerateWP.": "Failed to install AccelerateWP.",
+    "Fault LVE": "Fault LVE",
+    "Filter by": "Filter by",
+    "For more users, use": "For more users, use",
+    "GET STARTED NOW": "GET STARTED NOW",
+    "Hey! Take a look!": "Hey! Take a look!",
+    "Hide \"My domains\" page for end-user": "Hide \"My domains\" page for end-user",
+    "Hide MySQL usage": "Hide MySQL usage",
+    "Hide php extensions for end-user": "Hide php extensions for end-user",
+    "History": "History",
+    "I Agree": "I Agree",
+    "I Disagree": "I Disagree",
+    "Ignore errors and try again": "Ignore errors and try again",
+    "Init": "Init",
+    "Installing...": "Installing...",
+    "Isolation and LVE features are not available for domains managed by cPanel MultiPHP Manager.": "Isolation and LVE features are not available for domains managed by cPanel MultiPHP Manager.",
+    "Items per page:": "Items per page:",
+    "JSON is incorrect.": "JSON is incorrect.",
+    "LVE": "LVE",
+    "LVE Statistics tab": "LVE Statistics tab",
+    "LVE features are not available for domains managed by cPanel MultiPHP Manager.": "LVE features are not available for domains managed by cPanel MultiPHP Manager.",
+    "LVEs approaching limit": "LVEs approaching limit",
+    "Last 30 days": "Last 30 days",
+    "Last 7 days": "Last 7 days",
+    "Last update": "Last update",
+    "Limit": "Limit",
+    "Limits": "Limits",
+    "Load %(count)s more": "Load %(count)s more",
+    "Loading SQL query...": "Loading SQL query...",
+    "Loading domain configuration...": "Loading domain configuration...",
+    "Loading packages": "Loading packages",
+    "Loading users limits": "Loading users limits",
+    "Make&#x00A0;default&#x00A0;version": "Make&#x00A0;default&#x00A0;version",
+    "Manage Limits": "Manage Limits",
+    "Mark as read": "Mark as read",
+    "Migrate now": "Migrate now",
+    "Module installation failed. Skip this module and move to installation of the next module or see the log and try again.": "Module installation failed. Skip this module and move to installation of the next module or see the log and try again.",
+    "MySQL Governor mode": "MySQL Governor mode",
+    "MySqlGov is disabled": "MySqlGov is disabled",
+    "NO DOMAINS FOUND": "NO DOMAINS FOUND",
+    "NO RESULT FOUND": "NO RESULT FOUND",
+    "NO USERS FOUND": "NO USERS FOUND",
+    "No extensions available for the selected PHP version.": "No extensions available for the selected PHP version.",
+    "No options available for the selected PHP version.": "No options available for the selected PHP version.",
+    "Note: all packages of the application(s) will be re-installed": "Note: all packages of the application(s) will be re-installed",
+    "OK": "OK",
+    "Oops!": "Oops!",
+    "Options unavailable.": "Options unavailable.",
+    "Order by": "Order by",
+    "PHP": "PHP",
+    "Package": "Package",
+    "Panel Default": "Panel Default",
+    "Parameters": "Parameters",
+    "Please contact Cloudlinux Support": "Please contact Cloudlinux Support",
+    "Please contact Support": "Please contact Support",
+    "Please register it using an existing activation key": "Please register it using an existing activation key",
+    "Please register it using an existing activation key or get a trial one.": "Please register it using an existing activation key or get a trial one.",
+    "Processing...": "Processing...",
+    "Provider": "Provider",
+    "Quick action": "Quick action",
+    "Read more": "Read more",
+    "Refresh": "Refresh",
+    "Refresh now": "Refresh now",
+    "Request support": "Request support",
+    "Resellers hitting limits": "Resellers hitting limits",
+    "Reset": "Reset",
+    "Reset limits to default": "Reset limits to default",
+    "Resource Usage": "Resource Usage",
+    "Restart": "Restart",
+    "Retrying...": "Retrying...",
+    "Rollback": "Rollback",
+    "Run JS script": "Run JS script",
+    "Run NPM Install": "Run NPM Install",
+    "Run Pip Install": "Run Pip Install",
+    "Run Script": "Run Script",
+    "Run diagnostic": "Run diagnostic",
+    "SIGN UP AND GET TRIAL KEY": "SIGN UP AND GET TRIAL KEY",
+    "SQL-query": "SQL-query",
+    "Save": "Save",
+    "Select All": "Select All",
+    "Select default version": "Select default version",
+    "Select versions to install": "Select versions to install",
+    "Select which columns to display in the table": "Select which columns to display in the table",
+    "Selector": "Selector",
+    "Selector is": "Selector is",
+    "Selector is unavailable": "Selector is unavailable",
+    "Show": "Show",
+    "Show less": "Show less",
+    "Show more": "Show more",
+    "Show results": "Show results",
+    "Show top": "Show top",
+    "Site Isolation": "Site Isolation",
+    "Skip": "Skip",
+    "Skipped": "Skipped",
+    "Smart Advice": "Smart Advice",
+    "Snapshots": "Snapshots",
+    "Snooze": "Snooze",
+    "Specify parameters": "Specify parameters",
+    "Start app": "Start app",
+    "Statistic": "Statistic",
+    "Status": "Status",
+    "Statuses": "Statuses",
+    "Still have questions?": "Still have questions?",
+    "Stop app": "Stop app",
+    "Submit": "Submit",
+    "Submit answer": "Submit answer",
+    "Supported versions": "Supported versions",
+    "Thank you!": "Thank you!",
+    "Threshold": "Threshold",
+    "Time Unit": "Time Unit",
+    "Timeframe": "Timeframe",
+    "Toggle": "Toggle",
+    "Top 5 Users": "Top 5 Users",
+    "Top LVEs": "Top LVEs",
+    "Track user by": "Track user by",
+    "Try again": "Try again",
+    "Try the next steps:": "Try the next steps:",
+    "Unrestrict User": "Unrestrict User",
+    "Until next refresh": "Until next refresh",
+    "Update": "Update",
+    "Usage": "Usage",
+    "Use PHP selector": "Use PHP selector",
+    "Use abuser mode": "Use abuser mode",
+    "Username": "Username",
+    "Using": "Using",
+    "View details": "View details",
+    "Warning...": "Warning...",
+    "Website": "Website",
+    "Website monitoring": "Website monitoring",
+    "Will be switched to CloudLinux PHP Selector": "Will be switched to CloudLinux PHP Selector",
+    "Wizard is broken": "Wizard is broken",
+    "X-Ray failed to install.": "X-Ray failed to install.",
+    "X-Ray is not installed.": "X-Ray is not installed.",
+    "You have reached the limits within the past 24 hours": "You have reached the limits within the past 24 hours",
+    "Your site had no issues in the past 24 hours": "Your site had no issues in the past 24 hours",
+    "Your site might reach the resource limits soon": "Your site might reach the resource limits soon",
+    "cancel": "cancel",
+    "current user is not monitored": "current user is not monitored",
+    "get_app": "get_app",
+    "hitting limits": "hitting limits",
+    "info": "info",
+    "no snapshots": "no snapshots",
+    "not available": "not available",
+    "refresh": "refresh",
+    "sec": "sec",
+    "settings": "settings",
+    "t install this module automatically. Please see the log for details.": "t install this module automatically. Please see the log for details.",
+    "the page": "the page",
+    "the previous page": "the previous page",
+    "Notify Hoster": "Notify Hoster",
+    "Version": "Version",
+    "Ruby": "Ruby",
+    "Governor ver.": "Governor ver.",
+    "CageFS: Enabled": "CageFS: Enabled",
+    "Disable All": "Disable All",
+    "Reseller": "Reseller",
+    "Copy": "Copy",
+    "Notify me when I hit my limits": "Notify me when I hit my limits",
+    "Manage": "Manage",
+    "Notify Reseller": "Notify Reseller",
+    "CageFS: Enabled — click to disable": "CageFS: Enabled — click to disable",
+    "Notify Customers": "Notify Customers",
+    "Hoster & Reseller": "Hoster & Reseller",
+    "MySQL Governor": "MySQL Governor",
+    "CageFS: Disabled": "CageFS: Disabled",
+    "Resellers endusers with enabled resellers limits/all": "Resellers endusers with enabled resellers limits/all",
+    "Python": "Python",
+    "CageFS: Disabled — click to enable": "CageFS: Disabled — click to enable",
+    "Resellers accounts with enabled resellers limits/all": "Resellers accounts with enabled resellers limits/all",
+    "Mod_lsapi": "Mod_lsapi",
+    "Resellers limits": "Resellers limits",
+    "Applications": "Applications",
+    "Notify Hoster & Reseller Every": "Notify Hoster & Reseller Every",
+    "Notify Reseller's customers": "Notify Reseller's customers",
+    "Endusers": "Endusers",
+    "Customer": "Customer",
+    "Node.js": "Node.js",
+    "Notify me on users faults": "Notify me on users faults",
+    "Toggle navigation": "Toggle navigation",
+    "Go to CLN Account": "Go to CLN Account",
+    "Daily report per domain (updated once in 24 hours)": "Daily report per domain (updated once in 24 hours)",
+    "Run PHP X-Ray scanner": "Run PHP X-Ray scanner",
+    "Notify users in WP admin": "Notify users in WP admin",
+    "Premium": "Premium",
+    "Leave as disabled": "Leave as disabled",
+    "Incompatible": "Incompatible",
+    "Misconfiguration": "Misconfiguration",
+    "Error log": "Error log",
+    "Get the token": "Get the token",
+    "Upgrade to CLOS Shared PRO": "Upgrade to CLOS Shared PRO",
+    "LVE Stats Email Notifications": "LVE Stats Email Notifications",
+    "How to fix?": "How to fix?",
+    "Privacy Policy": "Privacy Policy",
+    "Terms of use": "Terms of use",
+    "EULA": "EULA",
+    "Install": "Install",
+    "Rerun precheck": "Rerun precheck",
+    "Monitoring for all websites by response status": "Monitoring for all websites by response status",
+    "Main page generation time": "Main page generation time",
+    "Collected data for the last 24 hours, last update:": "Collected data for the last 24 hours, last update:",
+    "Websites with errors": "Websites with errors",
+    "Total number of requests": "Total number of requests",
+    "Successful requests": "Successful requests",
+    "Requests with errors": "Requests with errors",
+    "Average response time of successful requests": "Average response time of successful requests",
+    "Not started requests due to short check interval": "Not started requests due to short check interval",
+    "Read more about": "Read more about",
+    "Vote or suggest": "Vote or suggest",
+    "Uncover Hidden Threats": "Uncover Hidden Threats",
+    "LVE Faults Email Notifications": "LVE Faults Email Notifications",
+    "Faults to include": "Faults to include",
+    "Minimum number of Faults to notify": "Minimum number of Faults to notify",
+    "Inode limits": "Inode limits",
+    "User interface settings": "User interface settings",
+    "MySQL Governor settings": "MySQL Governor settings",
+    "MySQL Governor Mode of operation": "MySQL Governor Mode of operation",
+    "MySQL Governor restrict type mode": "MySQL Governor restrict type mode",
+    "MySQL Governor restrict-log file URL and format": "MySQL Governor restrict-log file URL and format",
+    "MySQL Governor error-log file URL and logging level": "MySQL Governor error-log file URL and logging level",
+    "URL": "URL",
+    "Format": "Format",
+    "Level": "Level",
+    "Path to script": "Path to script",
+    "Period": "Period",
+    "Timeout": "Timeout",
+    "Kill slow SELECT queries": "Kill slow SELECT queries",
+    "Kill slow queries": "Kill slow queries",
+    "Limit (default mode)": "Limit (default mode)",
+    "Off - monitor Only": "Off - monitor Only",
+    "Abusers - use LVE for a user to restrict queries (default mode)": "Abusers - use LVE for a user to restrict queries (default mode)",
+    "User maximum connections": "User maximum connections",
+    "Restricted time periods": "Restricted time periods",
+    "Unlimit users automatically in": "Unlimit users automatically in",
+    "Notify Customers Every": "Notify Customers Every",
+    "Notify Reseller Every": "Notify Reseller Every",
+    "Notify User Every": "Notify User Every",
+    "Notify me when I hit my resource limits": "Notify me when I hit my resource limits",
+    "Reset inode limits": "Reset inode limits",
+    "Show end-user inode usage": "Show end-user inode usage",
+    "Hide Ruby App in web-interface": "Hide Ruby App in web-interface",
+    "Hide X-Ray App in web-interface": "Hide X-Ray App in web-interface",
+    "Hide end user usage statistic": "Hide end user usage statistic",
+    "Gather data for detailed statistics": "Gather data for detailed statistics",
+    "Enter Activation Key": "Enter Activation Key",
+    "First name": "First name",
+    "Last name": "Last name",
+    "Email": "Email",
+    "Company": "Company",
+    "Current version": "Current version",
+    "Choose version:": "Choose version:",
+    "Node.js version": "Node.js version",
+    "Python version": "Python version",
+    "Python Selector": "Python Selector",
+    "Move all applications to another Node.js version:": "Move all applications to another Node.js version:",
+    "Move all applications to another Python version:": "Move all applications to another Python version:",
+    "Domains for Node.js %(version)s": "Domains for Node.js %(version)s",
+    "Domains for Python %(version)s": "Domains for Python %(version)s",
+    "Application Entry point": "Application Entry point",
+    "Application URL": "Application URL",
+    "Application mode": "Application mode",
+    "Application root": "Application root",
+    "Application startup file": "Application startup file",
+    "Execute python script": "Execute python script",
+    "Choose version": "Choose version",
+    "Enter the path to the script file": "Enter the path to the script file",
+    "Add another file and press enter": "Add another file and press enter",
+    "Passenger log file": "Passenger log file",
+    "Isolated domains": "Isolated domains",
+    "Not isolated domains": "Not isolated domains",
+    "Domains that ready to use CL PHP Selector": "Domains that ready to use CL PHP Selector",
+    "cPanel Multi PHP Manager": "cPanel Multi PHP Manager",
+    "CageFS Skeleton": "CageFS Skeleton",
+    "Show only": "Show only",
+    "Dashboard": "Dashboard",
+    "Current Usage": "Current Usage",
+    "Users": "Users",
+    "Statistics": "Statistics",
+    "Packages": "Packages",
+    "Main": "Main",
+    "PHP Sites Analyzer": "PHP Sites Analyzer",
+    "Settings": "Settings",
+    "End users": "End users",
+    "End user": "End user",
+    "Resellers": "Resellers",
+    "Reseller's end users": "Reseller's end users",
+    "Reseller's end user": "Reseller's end user",
+    "Reseller's end users (no Reseller limit)": "Reseller's end users (no Reseller limit)",
+    "Reseller's end user<br>(no Reseller limit)": "Reseller's end user<br>(no Reseller limit)",
+    "Created by Hoster": "Created by Hoster",
+    "Created by Reseller": "Created by Reseller",
+    "Created by Reseller (no Reseller limit)": "Created by Reseller (no Reseller limit)",
+    "Created by Reseller<br>(no Reseller limit)": "Created by Reseller<br>(no Reseller limit)",
+    "Search": "Search",
+    "Search content": "Search content",
+    "To check what slows down the website": "To check what slows down the website",
+    "Check it now": "Check it now",
+    "All performance monitoring in one place for bottlenecks detection": "All performance monitoring in one place for bottlenecks detection",
+    "# of slow URLs": "# of slow URLs",
+    "# of slow requests": "# of slow requests",
+    "Total requests": "Total requests",
+    "Last updated:": "Last updated:",
+    "1 hour": "1 hour",
+    "24 hours": "24 hours",
+    "AccelerateWP": "AccelerateWP",
+    "Adds value for NODE_ENV variable": "Adds value for NODE_ENV variable",
+    "Auto refresh interval": "Auto refresh interval",
+    "Available only when MySQL Governer restricted mode is set to period.": "Available only when MySQL Governer restricted mode is set to period.",
+    "Average duration (sec)": "Average duration (sec)",
+    "Cannot download ${this.src}": "Cannot download ${this.src}",
+    "Change main filter": "Change main filter",
+    "Close dialog": "Close dialog",
+    "CloudLinux Support Chatbot": "CloudLinux Support Chatbot",
+    "Could not build custom fields": "Could not build custom fields",
+    "Dashboard progress": "Dashboard progress",
+    "Data was saved": "Data was saved",
+    "Database Queries": "Database Queries",
+    "Do not limit - Apply unlimited": "Do not limit - Apply unlimited",
+    "Do not uninstall Cloudlinux OS extension or reboot/power-off the server until the installation process is complete.": "Do not uninstall Cloudlinux OS extension or reboot/power-off the server until the installation process is complete.",
+    "Domains by user": "Domains by user",
+    "Enable Autotracing": "Enable Autotracing",
+    "Enter token": "Enter token",
+    "Entry Processes": "Entry Processes",
+    "Features": "Features",
+    "HTTP Queries": "HTTP Queries",
+    "Historical Usage": "Historical Usage",
+    "I agree with": "I agree with",
+    "I have read and accept": "I have read and accept",
+    "I/O Usage": "I/O Usage",
+    "If you have an IP-based license, please leave the \"enter activation key\" field empty.": "If you have an IP-based license, please leave the \"enter activation key\" field empty.",
+    "ImunifyAV: The Best Antivirus": "ImunifyAV: The Best Antivirus",
+    "In that mode once customer reaches the limits specified in the MySQL Governor, all customer's queries will be running inside LVE with id 3. This means that when you have 5 customers restricted at the same time, all queries for all those 5 customers well be sharing same LVE. The larger the number of restricted customers - the less resources per restricted customer will be available.": "In that mode once customer reaches the limits specified in the MySQL Governor, all customer's queries will be running inside LVE with id 3. This means that when you have 5 customers restricted at the same time, all queries for all those 5 customers well be sharing same LVE. The larger the number of restricted customers - the less resources per restricted customer will be available.",
+    "In that mode, once user goes over the limits specified in the MySQL Governor, all customer's queries will execute inside that user's LVE. We believe this mode will help with the condition when the site is still fast, but MySQL is slow (restricted) for that user. If someone abusers MySQL, it will cause queries to share LVE with PHP processes, and PHP processes will also be throttled, causing less of a new queries being sen to MySQL. Requires dbuser-map file.": "In that mode, once user goes over the limits specified in the MySQL Governor, all customer's queries will execute inside that user's LVE. We believe this mode will help with the condition when the site is still fast, but MySQL is slow (restricted) for that user. If someone abusers MySQL, it will cause queries to share LVE with PHP processes, and PHP processes will also be throttled, causing less of a new queries being sen to MySQL. Requires dbuser-map file.",
+    "In this mode MySQL Governor will not throttle customer's queries, instead it will let you monitor the MySQL usage to see the abusers at any given moment of time (and historically). This mode is good when you are just starting and want to see what is going on.": "In this mode MySQL Governor will not throttle customer's queries, instead it will let you monitor the MySQL usage to see the abusers at any given moment of time (and historically). This mode is good when you are just starting and want to see what is going on.",
+    "Inodes usage": "Inodes usage",
+    "Installation log": "Installation log",
+    "It is a physical address to your application on a server that corresponds with its URI. Upload your application files here.": "It is a physical address to your application on a server that corresponds with its URI. Upload your application files here.",
+    "It is an HTTP/HTTPS link to your application": "It is an HTTP/HTTPS link to your application",
+    "Items selection": "Items selection",
+    "Level1, Level2, Level3, Level4 - period of user restriction for different level of restriction. During this period all user's requests will be placed into LVE container. If user hits any of the limits during period of time specified in timeout, higher level of restricted will be used to restricte user. If user was already on Level4, Level4 will be applied again.": "Level1, Level2, Level3, Level4 - period of user restriction for different level of restriction. During this period all user's requests will be placed into LVE container. If user hits any of the limits during period of time specified in timeout, higher level of restricted will be used to restricte user. If user was already on Level4, Level4 will be applied again.",
+    "Loading": "Loading",
+    "Log file format, available from the list.": "Log file format, available from the list.",
+    "Logging level.": "Logging level.",
+    "Main settings": "Main settings",
+    "Maintenance": "Maintenance",
+    "Manage view modes": "Manage view modes",
+    "NodeJS": "NodeJS",
+    "Note:": "Note:",
+    "Number of seconds while slow request can be finished; otherwise, it will be canceled. Requests are checked at the 15 second intervals, so a request can be canceled after a timeout of 15 seconds.": "Number of seconds while slow request can be finished; otherwise, it will be canceled. Requests are checked at the 15 second intervals, so a request can be canceled after a timeout of 15 seconds.",
+    "PHP Selector": "PHP Selector",
+    "Page loading": "Page loading",
+    "Page navigation": "Page navigation",
+    "Period based restriction that has multiple levels.": "Period based restriction that has multiple levels.",
+    "Physical Memory Usage": "Physical Memory Usage",
+    "Process list": "Process list",
+    "Requests": "Requests",
+    "Running diagnostic": "Running diagnostic",
+    "SPEED Usage": "SPEED Usage",
+    "Select": "Select",
+    "Selector state": "Selector state",
+    "Setup wsgi callable object for your application": "Setup wsgi callable object for your application",
+    "Show columns": "Show columns",
+    "Slow requests density in period": "Slow requests density in period",
+    "Snapshot": "Snapshot",
+    "Sort by Average EP": "Sort by Average EP",
+    "Sort by Average IO": "Sort by Average IO",
+    "Sort by Average IOPS": "Sort by Average IOPS",
+    "Sort by Average MySQL IO": "Sort by Average MySQL IO",
+    "Sort by Average MySQL SPEED": "Sort by Average MySQL SPEED",
+    "Sort by Average NPROC": "Sort by Average NPROC",
+    "Sort by Average PMEM": "Sort by Average PMEM",
+    "Sort by Average SPEED": "Sort by Average SPEED",
+    "Sort by Average VMEM": "Sort by Average VMEM",
+    "Sort by EP Faults": "Sort by EP Faults",
+    "Sort by EP Limit": "Sort by EP Limit",
+    "Sort by IO Faults": "Sort by IO Faults",
+    "Sort by IO Limit": "Sort by IO Limit",
+    "Sort by IOPS Faults": "Sort by IOPS Faults",
+    "Sort by IOPS Limit": "Sort by IOPS Limit",
+    "Sort by MySQL IO Limit": "Sort by MySQL IO Limit",
+    "Sort by MySQL SPEED Limit": "Sort by MySQL SPEED Limit",
+    "Sort by NPROC Faults": "Sort by NPROC Faults",
+    "Sort by NPROC Limit": "Sort by NPROC Limit",
+    "Sort by PMEM Faults": "Sort by PMEM Faults",
+    "Sort by PMEM Limit": "Sort by PMEM Limit",
+    "Sort by SPEED Faults": "Sort by SPEED Faults",
+    "Sort by SPEED Limit": "Sort by SPEED Limit",
+    "Sort by VMEM Faults": "Sort by VMEM Faults",
+    "Sort by VMEM Limit": "Sort by VMEM Limit",
+    "Stop running slow select queries.": "Stop running slow select queries.",
+    "Success": "Success",
+    "Support": "Support",
+    "The activation link was successfully sent to your email": "The activation link was successfully sent to your email",
+    "The number of simultaneous connections of a restricted user (in LVE mode).": "The number of simultaneous connections of a restricted user (in LVE mode).",
+    "There are 0 errors found. PHP Selector should work normally.": "There are 0 errors found. PHP Selector should work normally.",
+    "This way there are no need for separate limits for MySQL. Depending on overhead we see in the future, we might decide to use it as a primary way of operating MySQL Governor. The benefits of this approach is that limits are applied to both PHP & MySQL at the same time, all the time, preventing any spikes what so ever. Requires dbuser-map file.": "This way there are no need for separate limits for MySQL. Depending on overhead we see in the future, we might decide to use it as a primary way of operating MySQL Governor. The benefits of this approach is that limits are applied to both PHP & MySQL at the same time, all the time, preventing any spikes what so ever. Requires dbuser-map file.",
+    "To retry diagnostic push the button \"Run diagnostic\"": "To retry diagnostic push the button \"Run diagnostic\"",
+    "Track user by MySQL Governor": "Track user by MySQL Governor",
+    "Use the activation link to get 30-days trial period": "Use the activation link to get 30-days trial period",
+    "We catch an unhandled exception from wizard please try again or skip": "We catch an unhandled exception from wizard please try again or skip",
+    "Web applications": "Web applications",
+    "Week": "Week",
+    "When user hits limits, the account will be marked as restricted and if user does not hit limit again during 'unlimit=time' account will be unrestricted. This mode doesn't have any additional levels / penalties.": "When user hits limits, the account will be marked as restricted and if user does not hit limit again during 'unlimit=time' account will be unrestricted. This mode doesn't have any additional levels / penalties.",
+    "X-Ray": "X-Ray",
+    "You can also enter a command to execute (e.g /path/to/manage.py migrate). Note, only python scripts allowed.": "You can also enter a command to execute (e.g /path/to/manage.py migrate). Note, only python scripts allowed.",
+    "You have 24 hours only to use CloudLinux Manager": "You have 24 hours only to use CloudLinux Manager",
+    "and": "and",
+    "for FREE": "for FREE",
+    "for Linux Servers": "for Linux Servers",
+    "or open CLN account and get a trial license for an existing account, then return and enter activation key here": "or open CLN account and get a trial license for an existing account, then return and enter activation key here",
+    "pages are expected to be speed up:": "pages are expected to be speed up:",
+    "CAGEFS": {
+        "newUsersDefaultMode": "New users will be {{mode}} by default in CageFS"
+    },
+    "%(faults)s faults": "%(faults)s faults",
+    "(Disable/Enable)": "(Disable/Enable)",
+    "100 entries": "100 entries",
+    "1000 faults": "1000 faults",
+    "95% of it's limits": "95% of it's limits",
+    "A wrapper around libuuid from the ext2utils project": "A wrapper around libuuid from the ext2utils project",
+    "AGREE": "AGREE",
+    "API for building Calendar data structures": "API for building Calendar data structures",
+    "All - always run queries inside user's LVE": "All - always run queries inside user's LVE",
+    "Allow definition of user defined constants in simple ini files, which are then processed like internal constants, without any of the usual performance penalties": "Allow definition of user defined constants in simple ini files, which are then processed like internal constants, without any of the usual performance penalties",
+    "Allow one to use htaccess-like file to configure PHP per directory, just like apache's htaccess": {
+        " It is especially useful with fastcgi (ISS5,6,7, lighttpd, etc": {
+            ")": "Allow one to use htaccess-like file to configure PHP per directory, just like apache's htaccess. It is especially useful with fastcgi (ISS5,6,7, lighttpd, etc.)"
+        }
+    },
+    "Allows work with text data interchange format with parser built on JSON_checker": "Allows work with text data interchange format with parser built on JSON_checker",
+    "Alternative PHP Cache is a framework that optimizes PHP intermediate code and caches data and compiled code from the PHP bytecode compiler in shared memory": "Alternative PHP Cache is a framework that optimizes PHP intermediate code and caches data and compiled code from the PHP bytecode compiler in shared memory",
+    "Any Faults": "Any Faults",
+    "Any Limit": "Any Limit",
+    "App Root Directory": "App Root Directory",
+    "App URI": "App URI",
+    "Application created": "Application created",
+    "Application saved": "Application saved",
+    "Apr": "Apr",
+    "Aug": "Aug",
+    "Available versions": "Available versions",
+    "Average EP": "Average EP",
+    "Average IO": "Average IO",
+    "Average IOPS": "Average IOPS",
+    "Average MySQL IO": "Average MySQL IO",
+    "Average MySQL SPEED": "Average MySQL SPEED",
+    "Average NPROC": "Average NPROC",
+    "Average PMEM": "Average PMEM",
+    "Average Processes": "Average Processes",
+    "Average SPEED": "Average SPEED",
+    "Average VMEM": "Average VMEM",
+    "BZIP2 compress and decompress stream filter implementation which performs inline compression and decompression using the bzip2 algorithm on any PHP IO stream": {
+        " The data produced by this filter, while compatible with the payload portion of a bz2 file, does not include headers or tailers for full bz2 file compatibility": "BZIP2 compress and decompress stream filter implementation which performs inline compression and decompression using the bzip2 algorithm on any PHP IO stream. The data produced by this filter, while compatible with the payload portion of a bz2 file, does not include headers or tailers for full bz2 file compatibility"
+    },
+    "Back": "Back",
+    "Before installation we highly recommend to make the database backup": "Before installation we highly recommend to make the database backup",
+    "Binary Calculator for arbitrary precision mathematics which supports numbers of any size and precision, represented as strings": "Binary Calculator for arbitrary precision mathematics which supports numbers of any size and precision, represented as strings",
+    "Bitsets manipulation library": "Bitsets manipulation library",
+    "By removing Node": {
+        "js version (%(version)s) all running users applications will be destroyed": {
+            "": "By removing Node.js version (%(version)s) all running users applications will be destroyed."
+        }
+    },
+    "CANCEL": "CANCEL",
+    "CPU Usage": "CPU Usage",
+    "Cache Memory usage": "Cache Memory usage",
+    "CageFS disabled": "CageFS disabled",
+    "CageFS enabled": "CageFS enabled",
+    "Can not change version": "Can not change version",
+    "Can not destroy webapp": "Can not destroy webapp",
+    "Can not install packages, those described in package": {
+        "json": "Can not install packages, those described in package.json"
+    },
+    "Can not read list user webapps": "Can not read list user webapps",
+    "Can not relocate webapp": "Can not relocate webapp",
+    "Can not restart webapp": "Can not restart webapp",
+    "Can not set variables": "Can not set variables",
+    "Can not start webapp": "Can not start webapp",
+    "Can not stop webapp": "Can not stop webapp",
+    "Can not transit webapp": "Can not transit webapp",
+    "Can't acquire lock for app: %(app)s": "Can't acquire lock for app: %(app)s",
+    "Can't create user webapp": "Can't create user webapp",
+    "Can't get list of scripts!": "Can't get list of scripts!",
+    "Change": "Change",
+    "Change Node": {
+        "js version for all applications": "Change Node.js version for all applications",
+        "js version for application on %(uri)s": "Change Node.js version for application on %(uri)s",
+        "js version for chosen applications": "Change Node.js version for chosen applications"
+    },
+    "Changes were successfully saved!": "Changes were successfully saved!",
+    "Change version": "Change version",
+    "Changing CageFS status for the default user package is restricted": "Changing CageFS status for the default user package is restricted",
+    "Check": "Check",
+    "Choose any value": "Choose any value",
+    "Coming soon": {
+        "": {
+            "": {
+                "": "Coming soon..."
+            }
+        }
+    },
+    "Concurrent connections": "Concurrent connections",
+    "Configuration file not found: %(path)s": "Configuration file not found: %(path)s",
+    "Configuration files": "Configuration files",
+    "Configure PHP": "Configure PHP",
+    "Confirm action": "Confirm action",
+    "Contact support": "Contact support",
+    "Conversion to and from Internationalized Domain Names": "Conversion to and from Internationalized Domain Names",
+    "Copied": "Copied",
+    "Copied to clipboard": "Copied to clipboard",
+    "Create": "Create",
+    "Criu status": "Criu status",
+    "Current Kernel": "Current Kernel",
+    "Current PHP version": "Current PHP version",
+    "Current usage unavailable": "Current usage unavailable",
+    "Day": "Day",
+    "Debug": "Debug",
+    "Dec": "Dec",
+    "Delete the application": "Delete the application",
+    "Delete version": "Delete version",
+    "Description": "Description",
+    "Detect configuration files": "Detect configuration files",
+    "Detected configuration files": "Detected configuration files",
+    "Disable Limits": "Disable Limits",
+    "Domains": "Domains",
+    "Driver implementing access from PHP to MySQL": "Driver implementing access from PHP to MySQL",
+    "Driver implementing access from PHP to PostgreSQL": "Driver implementing access from PHP to PostgreSQL",
+    "Driver implementing access from PHP to SQLite": "Driver implementing access from PHP to SQLite",
+    "EP": "EP",
+    "EP Faults": "EP Faults",
+    "EP Limit": "EP Limit",
+    "ERROR: Invalid parameter passed": "ERROR: Invalid parameter passed",
+    "ERROR: Invalid parameter passed or required parameter is missing": "ERROR: Invalid parameter passed or required parameter is missing",
+    "ERROR: It's not allowed to enable Selector when NodeJS interpreter is not installed": "ERROR: It's not allowed to enable Selector when NodeJS interpreter is not installed",
+    "ERROR: alt-php packages not found": "ERROR: alt-php packages not found",
+    "ERROR: no such script /usr/sbin/cagefsctl": "ERROR: no such script /usr/sbin/cagefsctl",
+    "ERROR: quota isn't activated": "ERROR: quota isn't activated",
+    "Edit %(fileName)s": "Edit %(fileName)s",
+    "Edit the application": "Edit the application",
+    "Enable Limits": "Enable Limits",
+    "Enable Node": {
+        "js Selector": "Enable Node.js Selector"
+    },
+    "Enable Python Selector": "Enable Python Selector",
+    "Enable Ruby Selector": "Enable Ruby Selector",
+    "Enable for existing user accounts": "Enable for existing user accounts",
+    "Enabled": "Enabled",
+    "Enabled by default for new customers account": "Enabled by default for new customers account",
+    "Enchant is the PHP binding for the Enchant library": {
+        " Enchant steps in to provide uniformity and conformity on top of all spelling libraries, and implement certain features that may be lacking in any individual provider library": "Enchant is the PHP binding for the Enchant library. Enchant steps in to provide uniformity and conformity on top of all spelling libraries, and implement certain features that may be lacking in any individual provider library"
+    },
+    "Endusers (with RL/all)": "Endusers (with RL/all)",
+    "Enter activation key": "Enter activation key",
+    "Environment variables": "Environment variables",
+    "Error": "Error",
+    "Error: CageFS is not initialized": {
+        " Use \"/usr/sbin/cagefsctl --init\" to initialize CageFS": "Error: CageFS is not initialized. Use \"/usr/sbin/cagefsctl --init\" to initialize CageFS"
+    },
+    "Example": "Example",
+    "Fast, stable PHP opcode cacher that has been tested and is now running on production servers under high load": {
+        " It is tested on Linux and FreeBSD and supported under Windows, for thread-safe and non-thread-safe versions of PHP": {
+            "": "Fast, stable PHP opcode cacher that has been tested and is now running on production servers under high load. It is tested on Linux and FreeBSD and supported under Windows, for thread-safe and non-thread-safe versions of PHP."
+        }
+    },
+    "Fault": "Fault",
+    "Faults": "Faults",
+    "Feb": "Feb",
+    "File detection completed successfully": {
+        "": "File detection completed successfully."
+    },
+    "File {{filename}} does not exist": "File {{filename}} does not exist",
+    "File {{filename}} not available for reading": "File {{filename}} not available for reading",
+    "Files are saved in /usr/lve/dbgovernor-store and being kept for 10 days": "Files are saved in /usr/lve/dbgovernor-store and being kept for 10 days",
+    "Files are saved in /var/lve/dbgovernor-store and being kept for 10 days": "Files are saved in /var/lve/dbgovernor-store and being kept for 10 days",
+    "Fri": "Fri",
+    "From": "From",
+    "Functionality to work with lightweight directory access protocol servers": "Functionality to work with lightweight directory access protocol servers",
+    "Functions for transparent reading and writing BZIP2 archives": "Functions for transparent reading and writing BZIP2 archives",
+    "Functions for working with images including images streaming": "Functions for working with images including images streaming",
+    "Functions to work with The WDDX, Web Distributed Data Exchange, a free, open XML-based technology that allows Web applications created with any platform to easily exchange data with one another over the Web": "Functions to work with The WDDX, Web Distributed Data Exchange, a free, open XML-based technology that allows Web applications created with any platform to easily exchange data with one another over the Web",
+    "Go to Imunify": "Go to Imunify",
+    "Governor mode is not abusers or single": "Governor mode is not abusers or single",
+    "Hide": "Hide",
+    "Hide LVE end user usage statistic": "Hide LVE end user usage statistic",
+    "Hide PHP extension selection": "Hide PHP extension selection",
+    "Hide Python App in web-interface": "Hide Python App in web-interface",
+    "Hooray!": "Hooray!",
+    "Hoster": "Hoster",
+    "Hour": "Hour",
+    "Huffman compression belongs into a family of algorithms with a variable codeword length": {
+        " That means that individual symbols (characters in a text file for instance) are replaced by bit sequences that have a distinct length": {
+            " So symbols that occur a lot in a file are given a short sequence while other that are used seldom get a longer bit sequence": "Huffman compression belongs into a family of algorithms with a variable codeword length. That means that individual symbols (characters in a text file for instance) are replaced by bit sequences that have a distinct length. So symbols that occur a lot in a file are given a short sequence while other that are used seldom get a longer bit sequence"
+        }
+    },
+    "IO": "IO",
+    "IO Faults": "IO Faults",
+    "IO Limit": "IO Limit",
+    "IOPS": "IOPS",
+    "IOPS Faults": "IOPS Faults",
+    "IOPS Limit": "IOPS Limit",
+    "If you need help with your license - please contact our support at <a href='https://cloudlinux": {
+        "zendesk": {
+            "com/hc/requests/new'>https://cloudlinux": {
+                "zendesk": {
+                    "com/hc/requests/new</a>": {
+                        "": "If you need help with your license - please contact our support at <a href='https://cloudlinux.zendesk.com/hc/requests/new'>https://cloudlinux.zendesk.com/hc/requests/new</a>."
+                    }
+                }
+            }
+        }
+    },
+    "If you need to purchase a license, you can buy it from <a href='https://www": {
+        "cloudlinux": {
+            "com'>https://www": {
+                "cloudlinux": {
+                    "com</a> or contact <a href='mailto:sales@cloudlinux": {
+                        "com'>sales@cloudlinux": {
+                            "com</a>": {
+                                "": "If you need to purchase a license, you can buy it from <a href='https://www.cloudlinux.com'>https://www.cloudlinux.com</a> or contact <a href='mailto:sales@cloudlinux.com'>sales@cloudlinux.com</a>."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "If your server is licensed by IP, please check if your IP license valid here": {
+        "": "If your server is licensed by IP, please check if your IP license valid here."
+    },
+    "Igbinary is a drop in replacement for the standard php serializer": {
+        " Instead of time and space consuming textual representation, igbinary stores php data structures in a compact binary form": {
+            " Savings are significant when using memcached or similar memory based storages for serialized data": "Igbinary is a drop in replacement for the standard php serializer. Instead of time and space consuming textual representation, igbinary stores php data structures in a compact binary form. Savings are significant when using memcached or similar memory based storages for serialized data"
+        }
+    },
+    "Ignored by Governor": "Ignored by Governor",
+    "Imagick is a native php extension to create and modify images using the ImageMagick API": "Imagick is a native php extension to create and modify images using the ImageMagick API",
+    "Implementation of a Bloom filter, which is a space-efficient probabilistic data structure that is used to test whether an element is a member of a set": "Implementation of a Bloom filter, which is a space-efficient probabilistic data structure that is used to test whether an element is a member of a set",
+    "In addition to normal ODBC support, the Unified ODBC functions in PHP allow you to access several databases that have borrowed the semantics of the ODBC API to implement their own API": {
+        " Instead of maintaining multiple database drivers that were all nearly identical, these drivers have been unified into a single set of ODBC functions": "In addition to normal ODBC support, the Unified ODBC functions in PHP allow you to access several databases that have borrowed the semantics of the ODBC API to implement their own API. Instead of maintaining multiple database drivers that were all nearly identical, these drivers have been unified into a single set of ODBC functions"
+    },
+    "Incorrect selector version: %(ver)s": "Incorrect selector version: %(ver)s",
+    "Inode limits was reset successfully!": "Inode limits was reset successfully!",
+    "Install CageFS": "Install CageFS",
+    "Install LSAPI": "Install LSAPI",
+    "Install MySQL Governor": "Install MySQL Governor",
+    "Installing NPM": {
+        "": {
+            "": {
+                "": "Installing NPM..."
+            }
+        }
+    },
+    "Interface to a powerful library for making HTTP, FTP and other requests and handling the output": "Interface to a powerful library for making HTTP, FTP and other requests and handling the output",
+    "Interface to the librsync library which allows to effectively synchronize local and remote files and directories": "Interface to the librsync library which allows to effectively synchronize local and remote files and directories",
+    "Internationalization extension is a wrapper for ICU library, enabling PHP programmers to perform UCA-conformant collation and date, time, number, currency formatting in their scripts": "Internationalization extension is a wrapper for ICU library, enabling PHP programmers to perform UCA-conformant collation and date, time, number, currency formatting in their scripts",
+    "Introduces tools to protect software written using the PHP programming language from being viewed, changed, and run on unlicensed computers": "Introduces tools to protect software written using the PHP programming language from being viewed, changed, and run on unlicensed computers",
+    "Invalid cpu parameter": "Invalid cpu parameter",
+    "Invalid value": {
+        " Use postfix": {
+            " Example: 1024[KB/s|MB/s|G/s]": "Invalid value. Use postfix. Example: 1024[KB/s|MB/s|G/s]",
+            " Example: 1024[K|M|G]": "Invalid value. Use postfix. Example: 1024[K|M|G]",
+            " Example: 1024[MB/s|G/s]": "Invalid value. Use postfix. Example: 1024[MB/s|G/s]",
+            " Example: 1024[Mhz|Ghz|%]": "Invalid value. Use postfix. Example: 1024[Mhz|Ghz|%]"
+        }
+    },
+    "It is a physical address to your application on a server that corresponds with its URI": "It is a physical address to your application on a server that corresponds with its URI",
+    "It is only known to work on Apache with mod_php, other SAPI implementations unfortunately still have issues": {
+        " At least PHP 5": {
+            "2 is needed": "It is only known to work on Apache with mod_php, other SAPI implementations unfortunately still have issues. At least PHP 5.2 is needed"
+        }
+    },
+    "Jan": "Jan",
+    "Jul": "Jul",
+    "Jun": "Jun",
+    "LSAPI mod version": "LSAPI mod version",
+    "LSAPI with connection pool": "LSAPI with connection pool",
+    "LVE ID": "LVE ID",
+    "LVE:": "LVE:",
+    "Last 10 minutes": "Last 10 minutes",
+    "Last 24 hours": "Last 24 hours",
+    "Last 30 minutes": "Last 30 minutes",
+    "Last 4 hours": "Last 4 hours",
+    "Last hour": "Last hour",
+    "Level1": "Level1",
+    "Level2": "Level2",
+    "Level3": "Level3",
+    "Level4": "Level4",
+    "Library which provides a set of functions for calculations with arbitrary length integers and bitsets": "Library which provides a set of functions for calculations with arbitrary length integers and bitsets",
+    "License is not valid": "License is not valid",
+    "List of installed Node": {
+        "js versions": "List of installed Node.js versions"
+    },
+    "List of installed Python versions": "List of installed Python versions",
+    "Log file URL, where killed queries will be saved": {
+        "": "Log file URL, where killed queries will be saved."
+    },
+    "Log restricted user's queries": "Log restricted user's queries",
+    "Long": "Long",
+    "Mailparse is an extension for parsing and working with email messages": {
+        " It can deal with RFC 822 and RFC 2045 (MIME) compliant messages": "Mailparse is an extension for parsing and working with email messages. It can deal with RFC 822 and RFC 2045 (MIME) compliant messages"
+    },
+    "Makes reverse-proxing (web accelerator) totally invisible for php applications": {
+        " Does not require php code modifications to handle X-Forwarded-For IP": {
+            " It still allows proxy-aware applications to work with X-Forwarded headers and proxy IP address, works with any web server and should work with any proxy server": {
+                " Using this extension with on a non reverse proxied system will result in a security issue": "Makes reverse-proxing (web accelerator) totally invisible for php applications. Does not require php code modifications to handle X-Forwarded-For IP. It still allows proxy-aware applications to work with X-Forwarded headers and proxy IP address, works with any web server and should work with any proxy server. Using this extension with on a non reverse proxied system will result in a security issue"
+            }
+        }
+    },
+    "Make default version": "Make default version",
+    "Mandatory field": "Mandatory field",
+    "Mar": "Mar",
+    "Max Cache Memory limit": "Max Cache Memory limit",
+    "Max EP": "Max EP",
+    "Max IO": "Max IO",
+    "Max IOPS": "Max IOPS",
+    "Max NPROC": "Max NPROC",
+    "Max PMEM": "Max PMEM",
+    "Max Processes": "Max Processes",
+    "Max SPEED": "Max SPEED",
+    "Max VMEM": "Max VMEM",
+    "May": "May",
+    "Medium": "Medium",
+    "Memory": "Memory",
+    "MessagePack is an efficient binary serialization format": {
+        " It lets you exchange data among multiple languages like JSON but faster and smaller": {
+            " For example, small integers (like flags or error code) are encoded into a single byte, and typical short strings only require an extra byte in addition to the strings themselves": {
+                " If you ever wished to use JSON for convenience (storing an image with metadata) but could not for technical reasons (encoding, size, speed": {
+                    "": {
+                        "": {
+                            "), MessagePack is a perfect replacement": "MessagePack is an efficient binary serialization format. It lets you exchange data among multiple languages like JSON but faster and smaller. For example, small integers (like flags or error code) are encoded into a single byte, and typical short strings only require an extra byte in addition to the strings themselves. If you ever wished to use JSON for convenience (storing an image with metadata) but could not for technical reasons (encoding, size, speed...), MessagePack is a perfect replacement"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Messages hashing framework": {
+        " Allows to handle arbitrary length messages by using different hashing algorithms in direct or incremental way": "Messages hashing framework. Allows to handle arbitrary length messages by using different hashing algorithms in direct or incremental way"
+    },
+    "Method": "Method",
+    "Mhash can be used to create checksums, message digests, message authentication codes, and more": "Mhash can be used to create checksums, message digests, message authentication codes, and more",
+    "Migration successful": "Migration successful",
+    "Minute": "Minute",
+    "Mode": "Mode",
+    "Modules left/added by dependencies: '%(ext1)s' is required for '%(ext2)s'": "Modules left/added by dependencies: '%(ext1)s' is required for '%(ext2)s'",
+    "Mon": "Mon",
+    "Monitored by Governor": "Monitored by Governor",
+    "Monitoring extension for PHP, collects error events and send them to one of the drivers": {
+        " SQLite and MySQL drivers are storing those in a database": "Monitoring extension for PHP, collects error events and send them to one of the drivers. SQLite and MySQL drivers are storing those in a database"
+    },
+    "Move and remove Node": {
+        "js": "Move and remove Node.js"
+    },
+    "Move and remove Python": "Move and remove Python",
+    "My WordPress Sites": "My WordPress Sites",
+    "My domains": "My domains",
+    "MySQL IO Limit": "MySQL IO Limit",
+    "MySQL SPEED Limit": "MySQL SPEED Limit",
+    "MySQL governor is disabled in the system": {
+        " Please, run \"service db_governor restart\" to start the service": "MySQL governor is disabled in the system. Please, run \"service db_governor restart\" to start the service"
+    },
+    "NO PACKAGES FOUND": "NO PACKAGES FOUND",
+    "NO STATISTICS FOUND FOR SELECTED PERIOD": "NO STATISTICS FOUND FOR SELECTED PERIOD",
+    "NPM Install completed successfully": {
+        "": "NPM Install completed successfully."
+    },
+    "NPROC": "NPROC",
+    "Name": "Name",
+    "New files not detected": {
+        "": "New files not detected."
+    },
+    "New users will be disabled by default in CageFS": "New users will be disabled by default in CageFS",
+    "New users will be enabled by default in CageFS": "New users will be enabled by default in CageFS",
+    "No": "No",
+    "No such application or it's broken": {
+        " Unable to find app nodeenv folder by this path: '%(app_nodeenv)s'": "No such application or it's broken. Unable to find app nodeenv folder by this path: '%(app_nodeenv)s'",
+        " Unable to find app venv folder by this path: '%(app_venv)s'": "No such application or it's broken. Unable to find app venv folder by this path: '%(app_venv)s'",
+        " Unable to find app-root folder by this path: '%(app_root)s'": "No such application or it's broken. Unable to find app-root folder by this path: '%(app_root)s'"
+    },
+    "No such application: %(app)s": "No such application: %(app)s",
+    "No valid CloudLinux License Found": "No valid CloudLinux License Found",
+    "NodeJS default version not defined": "NodeJS default version not defined",
+    "Not a valid numeric value": "Not a valid numeric value",
+    "Notify Customer Every": "Notify Customer Every",
+    "Notify Hoster Every": "Notify Hoster Every",
+    "Notify Reseller & User Every": "Notify Reseller & User Every",
+    "Notify Reseller on Customers": "Notify Reseller on Customers",
+    "Nov": "Nov",
+    "Number of Processes": "Number of Processes",
+    "Object Cache Module": "Object Cache Module",
+    "Object Cache database status": "Object Cache database status",
+    "Oct": "Oct",
+    "Only ASCII characters allowed": "Only ASCII characters allowed",
+    "Open": "Open",
+    "Options successfully saved!": "Options successfully saved!",
+    "Other": "Other",
+    "PHP Extensions": "PHP Extensions",
+    "PHP Options": "PHP Options",
+    "PHP Version": "PHP Version",
+    "PHP accelerator derived from the MMCache extension for the PHP programming language": {
+        " eAccelerator provides a bytecode cache": "PHP accelerator derived from the MMCache extension for the PHP programming language. eAccelerator provides a bytecode cache"
+    },
+    "PHP interpreter body": "PHP interpreter body",
+    "PHP language extension for RedHat Newt library, a terminal-based window and widget library for writing applications with user friendly interface": {
+        " Once this extension is enabled in PHP it will provide the use of Newt widgets, such as windows, buttons, checkboxes, radiobuttons, labels, editboxes, scrolls, textareas, scales, etc": {
+            " Use of this extension if very similar to the original Newt API of C programming language": "PHP language extension for RedHat Newt library, a terminal-based window and widget library for writing applications with user friendly interface. Once this extension is enabled in PHP it will provide the use of Newt widgets, such as windows, buttons, checkboxes, radiobuttons, labels, editboxes, scrolls, textareas, scales, etc. Use of this extension if very similar to the original Newt API of C programming language"
+        }
+    },
+    "PHP-TK is an native extension for the PHP programming language that implements language bindings for TCL-TK": {
+        " It provides an object-oriented interface and greatly simplifies writing client-side cross-platform GUI applications": "PHP-TK is an native extension for the PHP programming language that implements language bindings for TCL-TK. It provides an object-oriented interface and greatly simplifies writing client-side cross-platform GUI applications"
+    },
+    "PIP Install completed successfully": {
+        "": "PIP Install completed successfully."
+    },
+    "PMEM": "PMEM",
+    "PMEM Faults": "PMEM Faults",
+    "PMEM Limit": "PMEM Limit",
+    "PROCESSES Faults": "PROCESSES Faults",
+    "PROCESSES Limit": "PROCESSES Limit",
+    "Path": "Path",
+    "Path is not valid": "Path is not valid",
+    "Path to the log file is not valid": "Path to the log file is not valid",
+    "Pause": "Pause",
+    "Performance": "Performance",
+    "Perl Compatible Regular Expressions support": "Perl Compatible Regular Expressions support",
+    "Platform error": "Platform error",
+    "Please note": "Please note",
+    "Please wait": {
+        " We are processing": {
+            "": {
+                "": {
+                    "": "Please wait. We are processing..."
+                }
+            }
+        }
+    },
+    "Please, login as reseller to manage resellers end user limits": "Please, login as reseller to manage resellers end user limits",
+    "Port of the gender": {
+        "c program to find out the gender of firstnames": {
+            " The actual database contains more than 40000 firstnames from 54 countries": "Port of the gender.c program to find out the gender of firstnames. The actual database contains more than 40000 firstnames from 54 countries"
+        }
+    },
+    "Process Control support in PHP implements the Unix style of process creation, program execution, signal handling and process termination": {
+        " Process Control should not be enabled within a web server environment because unexpected results can happen": "Process Control support in PHP implements the Unix style of process creation, program execution, signal handling and process termination. Process Control should not be enabled within a web server environment because unexpected results can happen"
+    },
+    "Processes Limit": "Processes Limit",
+    "Profitability": "Profitability",
+    "Provides access for images EXIF metadata": "Provides access for images EXIF metadata",
+    "Provides multibyte specific string functions that help you deal with multibyte encodings in PHP": {
+        " In addition to that, mbstring handles character encoding conversion between the possible encoding pairs": {
+            " mbstring is designed to handle Unicode-based encodings such as UTF-8 and UCS-2 and many single-byte encodings for convenience": "Provides multibyte specific string functions that help you deal with multibyte encodings in PHP. In addition to that, mbstring handles character encoding conversion between the possible encoding pairs. mbstring is designed to handle Unicode-based encodings such as UTF-8 and UCS-2 and many single-byte encodings for convenience"
+        }
+    },
+    "Purge all cache": "Purge all cache",
+    "Quotas not activated on this system": "Quotas not activated on this system",
+    "Read user guide": "Read user guide",
+    "Removing Node": {
+        "js version %(version)s": "Removing Node.js version %(version)s"
+    },
+    "Repeated environment variable name": "Repeated environment variable name",
+    "Requires dbuser-map file": {
+        "": "Requires dbuser-map file."
+    },
+    "Reseller & User": "Reseller & User",
+    "Reseller limits for %(username)s are enabled": {
+        " Admin can`t set limits for resellers users": {
+            "": "Reseller limits for %(username)s are enabled. Admin can`t set limits for resellers users."
+        }
+    },
+    "Reseller without limits will work with the same frequency as hoster notifications": {
+        "": "Reseller without limits will work with the same frequency as hoster notifications."
+    },
+    "Resellers accounts with RL/all": "Resellers accounts with RL/all",
+    "Reset to default": "Reset to default",
+    "Restart the application": "Restart the application",
+    "Running script": {
+        "": {
+            "": {
+                "": "Running script..."
+            }
+        }
+    },
+    "SPEED": "SPEED",
+    "SPEED Faults": "SPEED Faults",
+    "SPEED Limit": "SPEED Limit",
+    "Sat": "Sat",
+    "Save Changes": "Save Changes",
+    "Script completed successfully": {
+        "": "Script completed successfully."
+    },
+    "Security": "Security",
+    "Security Sensor": "Security Sensor",
+    "Sep": "Sep",
+    "Server is not running, Use 'service lvestats start' command to start it": "Server is not running, Use 'service lvestats start' command to start it",
+    "Server uptime": "Server uptime",
+    "Session support in PHP consists of a way to preserve certain data across subsequent accesses": {
+        " This enables you to build more customized applications and increase the appeal of your web site": "Session support in PHP consists of a way to preserve certain data across subsequent accesses. This enables you to build more customized applications and increase the appeal of your web site"
+    },
+    "Set as default PHP version for this user": "Set as default PHP version for this user",
+    "Set of interfaces and classes for solving standard problems": "Set of interfaces and classes for solving standard problems",
+    "Shmop is an easy to use set of functions that allows PHP to read, write, create and delete Unix shared memory segments": "Shmop is an easy to use set of functions that allows PHP to read, write, create and delete Unix shared memory segments",
+    "Short": "Short",
+    "Show only ignored users": "Show only ignored users",
+    "Show users with CageFS enabled": "Show users with CageFS enabled",
+    "Single - single restricted's LVE for all restricted customers": "Single - single restricted's LVE for all restricted customers",
+    "Snooze 24 hours": "Snooze 24 hours",
+    "Some domains/subdomains don't use PHP Selector because they have a non-system default version (in MultiPHP Manager) or PHP_FPM enabled": {
+        " You can find their list on domains tab and pass control to PHP Selector if necessary": {
+            "": "Some domains/subdomains don't use PHP Selector because they have a non-system default version (in MultiPHP Manager) or PHP_FPM enabled. You can find their list on domains tab and pass control to PHP Selector if necessary."
+        }
+    },
+    "Sorry, we couldn't install this module automatically": {
+        " Please see the log for details": {
+            "": "Sorry, we couldn't install this module automatically. Please see the log for details."
+        }
+    },
+    "SourceGuardian is commercial software which allows you to securely encode, compile and encrypt php scripts": {
+        " In this way you will protect your source code from viewing and editing": {
+            " You can lock your files based on the server IP where they will be opened, based on the domain name, the MAC address or a defined time period": {
+                " In this way the files can not be used on a different computer, under a different domain or outside of a defined time interval": "SourceGuardian is commercial software which allows you to securely encode, compile and encrypt php scripts. In this way you will protect your source code from viewing and editing. You can lock your files based on the server IP where they will be opened, based on the domain name, the MAC address or a defined time period. In this way the files can not be used on a different computer, under a different domain or outside of a defined time interval"
+            }
+        }
+    },
+    "Stability": "Stability",
+    "Standard PHP Library": "Standard PHP Library",
+    "Start the application": "Start the application",
+    "Statistics collected": "Statistics collected",
+    "Stop the application": "Stop the application",
+    "Suhosin is an advanced protection system for PHP installations": {
+        " It was designed to protect servers and users from known and unknown flaws in PHP applications and the PHP core": "Suhosin is an advanced protection system for PHP installations. It was designed to protect servers and users from known and unknown flaws in PHP applications and the PHP core"
+    },
+    "Sun": "Sun",
+    "Support for POSIX regular expressions": {
+        " Considered deprecated as of PHP 5": {
+            "3 in favour of PCRE extension": "Support for POSIX regular expressions. Considered deprecated as of PHP 5.3 in favour of PCRE extension"
+        }
+    },
+    "Support for SQLite version 3 databases": "Support for SQLite version 3 databases",
+    "Switch off": "Switch off",
+    "Switch on": "Switch on",
+    "Switch to full mode": "Switch to full mode",
+    "Switch to lite mode": "Switch to lite mode",
+    "System V messages support": "System V messages support",
+    "System V semaphore support": "System V semaphore support",
+    "System V shared memory support": "System V shared memory support",
+    "The DOM extension allows you to operate on XML documents through the DOM API with PHP 5": "The DOM extension allows you to operate on XML documents through the DOM API with PHP 5",
+    "The Double Metaphone algorithm by Lawrence Philips allows a word to be broken down into its phonemes": "The Double Metaphone algorithm by Lawrence Philips allows a word to be broken down into its phonemes",
+    "The PHP Data Objects (PDO) extension defines a lightweight, consistent interface for accessing databases in PHP": {
+        " Each database driver that implements the PDO interface can expose database-specific features as regular extension functions": {
+            " Note that you cannot perform any database functions using the PDO extension by itself; you must use a database-specific PDO driver to access a database server": "The PHP Data Objects (PDO) extension defines a lightweight, consistent interface for accessing databases in PHP. Each database driver that implements the PDO interface can expose database-specific features as regular extension functions. Note that you cannot perform any database functions using the PDO extension by itself; you must use a database-specific PDO driver to access a database server"
+        }
+    },
+    "The SNMP extension provides a very simple and easily usable toolset for managing remote devices via the Simple Network Management Protocol": "The SNMP extension provides a very simple and easily usable toolset for managing remote devices via the Simple Network Management Protocol",
+    "The SOAP extension can be used to write SOAP Servers and Clients": {
+        " It supports subsets of SOAP 1": {
+            "1, SOAP 1": {
+                "2 and WSDL 1": {
+                    "1 specifications": {
+                        "": "The SOAP extension can be used to write SOAP Servers and Clients. It supports subsets of SOAP 1.1, SOAP 1.2 and WSDL 1.1 specifications."
+                    }
+                }
+            }
+        }
+    },
+    "The SimpleXML extension provides a very simple and easily usable toolset to convert XML to an object that can be processed with normal property selectors and array iterators": "The SimpleXML extension provides a very simple and easily usable toolset to convert XML to an object that can be processed with normal property selectors and array iterators",
+    "The WeakRef class provides a gateway to objects without preventing the garbage collector from freeing those objects": {
+        " It also provides a way to turn a weak reference into a strong one": "The WeakRef class provides a gateway to objects without preventing the garbage collector from freeing those objects. It also provides a way to turn a weak reference into a strong one"
+    },
+    "The XSL extension implements the XSL standard, performing XSLT transformations using the libxslt library": "The XSL extension implements the XSL standard, performing XSLT transformations using the libxslt library",
+    "The Xdebug extension helps you debugging your script by providing a lot of valuable debug information": {
+        " The debug information that Xdebug can provide includes the following: stack and function traces in error messages with full parameter display for user defined functions, function name, file name and line indications, support for member functions; memory allocation; protection for infinite recursions": {
+            " Xdebug also provides: profiling information for PHP scripts; code coverage analysis; capabilities to debug your scripts interactively with a debug client": "The Xdebug extension helps you debugging your script by providing a lot of valuable debug information. The debug information that Xdebug can provide includes the following: stack and function traces in error messages with full parameter display for user defined functions, function name, file name and line indications, support for member functions; memory allocation; protection for infinite recursions. Xdebug also provides: profiling information for PHP scripts; code coverage analysis; capabilities to debug your scripts interactively with a debug client"
+        }
+    },
+    "The dbx module is a database abstraction layer": {
+        " The dbx functions allow you to access all supported databases using a single calling convention": {
+            " The dbx-functions themselves do not interface directly to the databases, but interface to the modules that are used to support these databases": {
+                " The currently supported databases are MySQL, ODBC, Oracle (oci8), MS SQL Server, PostgreSQL, FrontBase, Sybase-CT and SQLite": {
+                    " The module-dependencies are only for the databases you wish to use": "The dbx module is a database abstraction layer. The dbx functions allow you to access all supported databases using a single calling convention. The dbx-functions themselves do not interface directly to the databases, but interface to the modules that are used to support these databases. The currently supported databases are MySQL, ODBC, Oracle (oci8), MS SQL Server, PostgreSQL, FrontBase, Sybase-CT and SQLite. The module-dependencies are only for the databases you wish to use"
+                }
+            }
+        }
+    },
+    "The extension used for detecting XSS codes(tainted string)": {
+        " It also can be used to spot sql injection vulnerabilities, shell inject, etc": "The extension used for detecting XSS codes(tainted string). It also can be used to spot sql injection vulnerabilities, shell inject, etc"
+    },
+    "The inotify extension exposes the inotify functions": "The inotify extension exposes the inotify functions",
+    "The interface for cleaning and recovering utility Tidy HTML, which apart from the cleaning and recovering allows HTML documents manipulation and document tree traverse": "The interface for cleaning and recovering utility Tidy HTML, which apart from the cleaning and recovering allows HTML documents manipulation and document tree traverse",
+    "The phar extension provides a way to put entire PHP applications into a single file called a phar (PHP Archive) for easy distribution and installation": {
+        " In addition to providing this service, the phar extension also provides a file-format abstraction method for creating and manipulating tar and zip files through the PharData class, much as PDO provides a unified interface for accessing different databases": "The phar extension provides a way to put entire PHP applications into a single file called a phar (PHP Archive) for easy distribution and installation. In addition to providing this service, the phar extension also provides a file-format abstraction method for creating and manipulating tar and zip files through the PharData class, much as PDO provides a unified interface for accessing different databases"
+    },
+    "The quickhash extension contains a set of specific strongly-typed classes to deal with specific set and hash implementations": "The quickhash extension contains a set of specific strongly-typed classes to deal with specific set and hash implementations",
+    "The socket extension implements a low-level interface to the socket communication functions based on the popular BSD sockets, providing the possibility to act as a socket server as well as a client": {
+        "": "The socket extension implements a low-level interface to the socket communication functions based on the popular BSD sockets, providing the possibility to act as a socket server as well as a client."
+    },
+    "The tokenizer functions provide an interface to the PHP tokenizer embedded in the Zend Engine": {
+        " Using these functions you may write your own PHP source analyzing or modification tools without having to deal with the language specification at the lexical level": "The tokenizer functions provide an interface to the PHP tokenizer embedded in the Zend Engine. Using these functions you may write your own PHP source analyzing or modification tools without having to deal with the language specification at the lexical level"
+    },
+    "The trader extension is a free open source stock library based on TA-Lib": {
+        " It's dedicated to trading software developers requiring to perform technical analysis of financial market data": {
+            " Alongside many indicators like ADX, MACD, RSI, Stochastic, TRIX the candlestick pattern recognition and several vector arithmetic and algebraic functions are present": "The trader extension is a free open source stock library based on TA-Lib. It's dedicated to trading software developers requiring to perform technical analysis of financial market data. Alongside many indicators like ADX, MACD, RSI, Stochastic, TRIX the candlestick pattern recognition and several vector arithmetic and algebraic functions are present"
+        }
+    },
+    "These functions allow you to access records stored in dBase-format (dbf) databases": {
+        " dBase files are simple sequential files of fixed length records": {
+            " Records are appended to the end of the file": "These functions allow you to access records stored in dBase-format (dbf) databases. dBase files are simple sequential files of fixed length records. Records are appended to the end of the file"
+        }
+    },
+    "These functions allow you to check the spelling of a word and offer suggestions": "These functions allow you to check the spelling of a word and offer suggestions",
+    "These functions allow you to get the date and time from the server where your PHP scripts are running": {
+        " You can use these functions to format the date and time in many different ways": {
+            " The date and time information is internally stored as a 64-bit number so all conceivably useful dates (including negative years) are supported": {
+                " The range is from about 292 billion years in the past to the same in the future": "These functions allow you to get the date and time from the server where your PHP scripts are running. You can use these functions to format the date and time in many different ways. The date and time information is internally stored as a 64-bit number so all conceivably useful dates (including negative years) are supported. The range is from about 292 billion years in the past to the same in the future"
+            }
+        }
+    },
+    "These functions allow you to use the CrackLib library to test the strength of a password": {
+        " The strength of a password is tested by that checks length, use of upper and lower case and checked against the specified CrackLib dictionary": {
+            " CrackLib will also give helpful diagnostic messages that will help to strengthen the password": "These functions allow you to use the CrackLib library to test the strength of a password. The strength of a password is tested by that checks length, use of upper and lower case and checked against the specified CrackLib dictionary. CrackLib will also give helpful diagnostic messages that will help to strengthen the password"
+        }
+    },
+    "These functions build the foundation for accessing Berkeley DB style databases": {
+        " This is a general abstraction layer for several file-based databases": {
+            " As such, functionality is limited to a common subset of features supported by modern databases such as Oracle Berkeley DB": "These functions build the foundation for accessing Berkeley DB style databases. This is a general abstraction layer for several file-based databases. As such, functionality is limited to a common subset of features supported by modern databases such as Oracle Berkeley DB"
+        }
+    },
+    "These functions can be used for XML-RPC servers and clients writing": "These functions can be used for XML-RPC servers and clients writing",
+    "These functions enable you to operate with the IMAP protocol, as well as the NNTP, POP3 and local mailbox access methods": "These functions enable you to operate with the IMAP protocol, as well as the NNTP, POP3 and local mailbox access methods",
+    "This PHP extension allows you to find the location of an IP address - City, State, Country, Longitude, Latitude, and other information as all, such as ISP and connection type": "This PHP extension allows you to find the location of an IP address - City, State, Country, Longitude, Latitude, and other information as all, such as ISP and connection type",
+    "This PHP extension implements support for expat in PHP": {
+        " This toolkit lets you parse, but not validate, XML documents": "This PHP extension implements support for expat in PHP. This toolkit lets you parse, but not validate, XML documents"
+    },
+    "This Python version is used by system and cannot be removed": "This Python version is used by system and cannot be removed",
+    "This changes will be saved": {
+        " Are you sure you want it?": "This changes will be saved. Are you sure you want it?"
+    },
+    "This extension aims at helping people making PHP a stronger typed language and can be a good alternative to scalar type hinting": {
+        " It provides different typehandling classes as such as integer, float, bool, enum and string": "This extension aims at helping people making PHP a stronger typed language and can be a good alternative to scalar type hinting. It provides different typehandling classes as such as integer, float, bool, enum and string"
+    },
+    "This extension allows php applications to communicate with any Stomp compliant Message Brokers through easy object oriented and procedural interfaces": "This extension allows php applications to communicate with any Stomp compliant Message Brokers through easy object oriented and procedural interfaces",
+    "This extension allows you to transliterate text in non-latin characters (such as Chinese, Cyrillic, Greek etc) to latin characters": {
+        " Besides the transliteration the extension also contains filters to uppercase and lowercase latin, cyrillic and greek, and perform special forms of transliteration such as converting ligatures and normalizing punctuation and spacing": "This extension allows you to transliterate text in non-latin characters (such as Chinese, Cyrillic, Greek etc) to latin characters. Besides the transliteration the extension also contains filters to uppercase and lowercase latin, cyrillic and greek, and perform special forms of transliteration such as converting ligatures and normalizing punctuation and spacing"
+    },
+    "This extension enables transparent reading GZIP archives and writing into them in file system access manner": "This extension enables transparent reading GZIP archives and writing into them in file system access manner",
+    "This extension filters data by either validating or sanitizing it": {
+        " This is especially useful when the data source contains unknown (or foreign) data, like user supplied input": {
+            " For example, this data may come from an HTML form": {
+                "": "This extension filters data by either validating or sanitizing it. This is especially useful when the data source contains unknown (or foreign) data, like user supplied input. For example, this data may come from an HTML form."
+            }
+        }
+    },
+    "This extension functions allow to check if a symbol or a string belongs to a certain set of symbols while taking into account regional settings": "This extension functions allow to check if a symbol or a string belongs to a certain set of symbols while taking into account regional settings",
+    "This extension gives a user access to functionality provided by MySQL server 4": {
+        "1 and above": "This extension gives a user access to functionality provided by MySQL server 4.1 and above"
+    },
+    "This extension is a drop-in replacement for the builtin timezone database that comes with PHP": {
+        " You should only install this extension in case you need to get a later version of the timezone database than the one that ships with PHP": "This extension is a drop-in replacement for the builtin timezone database that comes with PHP. You should only install this extension in case you need to get a later version of the timezone database than the one that ships with PHP"
+    },
+    "This extension is non-cached, one-direction way for generating streams of files for XML data": "This extension is non-cached, one-direction way for generating streams of files for XML data",
+    "This extension lets reading compressed ZIP archives and writing into them easily": "This extension lets reading compressed ZIP archives and writing into them easily",
+    "This extension provides OAuth consumer and provider bindings": {
+        " OAuth is an authorization protocol built on top of HTTP which allows applications to securely access data without having to store usernames and passwords": "This extension provides OAuth consumer and provider bindings. OAuth is an authorization protocol built on top of HTTP which allows applications to securely access data without having to store usernames and passwords"
+    },
+    "This extension provides PAM (Pluggable Authentication Modules) integration": {
+        " PAM is a system of libraries that handle the authentication tasks of applications and services": {
+            " The library provides a stable API for applications to defer to for authentication tasks": {
+                "": "This extension provides PAM (Pluggable Authentication Modules) integration. PAM is a system of libraries that handle the authentication tasks of applications and services. The library provides a stable API for applications to defer to for authentication tasks."
+            }
+        }
+    },
+    "This extension provides asynchronous POSIX IO by means of libeio C library": "This extension provides asynchronous POSIX IO by means of libeio C library",
+    "This extension provides interface to encodings conversion library iconv": "This extension provides interface to encodings conversion library iconv",
+    "This is a syntactic analyzer for XML": {
+        " It acts as a cursor moving along the document stream and pauses at every node on the way": "This is a syntactic analyzer for XML. It acts as a cursor moving along the document stream and pauses at every node on the way"
+    },
+    "This is an interface to the mcrypt library, which supports a wide variety of block algorithms such as DES, TripleDES, Blowfish (default), 3-WAY, SAFER-SK64, SAFER-SK128, TWOFISH, TEA, RC2 and GOST in CBC, OFB, CFB and ECB cipher modes": {
+        " Additionally, it supports RC6 and IDEA which are considered non-free": {
+            " CFB and OFB are 8bit by default": "This is an interface to the mcrypt library, which supports a wide variety of block algorithms such as DES, TripleDES, Blowfish (default), 3-WAY, SAFER-SK64, SAFER-SK128, TWOFISH, TEA, RC2 and GOST in CBC, OFB, CFB and ECB cipher modes. Additionally, it supports RC6 and IDEA which are considered non-free. CFB and OFB are 8bit by default"
+        }
+    },
+    "This is the statistics extension": {
+        " It contains few dozens of functions useful for statistical computations": "This is the statistics extension. It contains few dozens of functions useful for statistical computations"
+    },
+    "This module contains an interface to the GNU Recode library": {
+        " The GNU Recode library converts files between various coded character sets and surface encodings": {
+            " When this cannot be achieved exactly, it may get rid of the offending characters or fall back on approximations": "This module contains an interface to the GNU Recode library. The GNU Recode library converts files between various coded character sets and surface encodings. When this cannot be achieved exactly, it may get rid of the offending characters or fall back on approximations"
+        }
+    },
+    "This module functions allow data validation and securing against possible harmful constructions": {
+        " They operate in two ways": "This module functions allow data validation and securing against possible harmful constructions. They operate in two ways"
+    },
+    "This module functions implement Native Language Support API for applications internationalization": "This module functions implement Native Language Support API for applications internationalization",
+    "This module functions let you work with MySQL": {
+        " Do not use it for new code, use mysqli or pdo_mysql instead": "This module functions let you work with MySQL. Do not use it for new code, use mysqli or pdo_mysql instead"
+    },
+    "This module functions provide a set of functions and primitives for functional programming": "This module functions provide a set of functions and primitives for functional programming",
+    "This module functions provide remote servers access by FTP protocol": {
+        "": "This module functions provide remote servers access by FTP protocol."
+    },
+    "This module functions try to determine a file content type and encoding by means of analyzing certain magic bytes sequences at certain positions of the file": {
+        " This is not truly reliable method but for most situations that will do": "This module functions try to determine a file content type and encoding by means of analyzing certain magic bytes sequences at certain positions of the file. This is not truly reliable method but for most situations that will do"
+    },
+    "This module functions use GNU MP library to calculate integers of arbitrary length": "This module functions use GNU MP library to calculate integers of arbitrary length",
+    "This module lets you control your local coin acceptor, using a serial connection and the simple management protocol": {
+        " This module supports 4 slot coin acceptors using the ABCD method to control them": "This module lets you control your local coin acceptor, using a serial connection and the simple management protocol. This module supports 4 slot coin acceptors using the ABCD method to control them"
+    },
+    "This module provide access to functions defined in IEEE 1003": {
+        "1 (POSIX": {
+            "1) that are not accessible with other means": "This module provide access to functions defined in IEEE 1003.1 (POSIX.1) that are not accessible with other means"
+        }
+    },
+    "This module uses the functions of OpenSSL for generation and verification of signatures and for sealing (encrypting) and opening (decrypting) data": "This module uses the functions of OpenSSL for generation and verification of signatures and for sealing (encrypting) and opening (decrypting) data",
+    "This package allows to manipulate extended attributes on filesystems that support them": {
+        " Requires libattr from Linux XFS project": "This package allows to manipulate extended attributes on filesystems that support them. Requires libattr from Linux XFS project"
+    },
+    "This package functionality allows clients to perform authentication and accounting by means of network requests to remote servers": "This package functionality allows clients to perform authentication and accounting by means of network requests to remote servers",
+    "This package functionality includes full-fledged Reflection API which gives possibility for reverse-engineering of classes, interfaces, function, methods and modules": "This package functionality includes full-fledged Reflection API which gives possibility for reverse-engineering of classes, interfaces, function, methods and modules",
+    "This package handles LZF compression and decompression": "This package handles LZF compression and decompression",
+    "This resellers end user is managed by resellers limits": "This resellers end user is managed by resellers limits",
+    "This reseller’s end user is managed by reseller’s limits": "This reseller’s end user is managed by reseller’s limits",
+    "This stem extension for PHP provides stemming capability for a variety of languages using Dr": {
+        " M": {
+            "F": {
+                " Porter's Snowball API, which can be found at: http://snowball": {
+                    "tartarus": {
+                        "org": "This stem extension for PHP provides stemming capability for a variety of languages using Dr. M.F. Porter's Snowball API, which can be found at: http://snowball.tartarus.org"
+                    }
+                }
+            }
+        }
+    },
+    "Thu": "Thu",
+    "To": "To",
+    "To be triggered when account is restricted": {
+        "": "To be triggered when account is restricted."
+    },
+    "To change limits for VE_DEFAULT package, please change limits for DEFAULT user": {
+        "": "To change limits for VE_DEFAULT package, please change limits for DEFAULT user."
+    },
+    "To switch PHP Selector please enable CageFS first": "To switch PHP Selector please enable CageFS first",
+    "To use Cloudlinux PHP Selector for these domains you can transfer control using table below": "To use Cloudlinux PHP Selector for these domains you can transfer control using table below",
+    "Today": "Today",
+    "Top 5 resellers": "Top 5 resellers",
+    "Total domains": "Total domains",
+    "Traces through and dumps the hierarchy of file inclusions and class inheritance at runtime": "Traces through and dumps the hierarchy of file inclusions and class inheritance at runtime",
+    "Try our new ImunifyAV": "Try our new ImunifyAV",
+    "Tue": "Tue",
+    "URI Templates allow you to leave parts of a URI to be filled in by a client before they are used": "URI Templates allow you to leave parts of a URI to be filled in by a client before they are used",
+    "Uncover": "Uncover",
+    "Unknown error": "Unknown error",
+    "Unlimited": "Unlimited",
+    "Unpause": "Unpause",
+    "Unrestrict": "Unrestrict",
+    "Unrestrict All": "Unrestrict All",
+    "Unrestrict All MySQL Abusers": "Unrestrict All MySQL Abusers",
+    "Unsupported OS": "Unsupported OS",
+    "Unsupported version: %(ver)s": "Unsupported version: %(ver)s",
+    "Use Defaults": "Use Defaults",
+    "Use postfix if it is needed": {
+        " Example: 1024[KB/s|MB/s|G/s]": {
+            " By default used \"KB/s\"": {
+                "": "Use postfix if it is needed. Example: 1024[KB/s|MB/s|G/s]. By default used \"KB/s\"."
+            }
+        },
+        " Example: 1024[K|M|G]": {
+            " By default used \"K\"": {
+                "": "Use postfix if it is needed. Example: 1024[K|M|G]. By default used \"K\"."
+            }
+        },
+        " Example: 1024[MB/s|G/s]": {
+            " By default used \"MB/s\"": {
+                "": "Use postfix if it is needed. Example: 1024[MB/s|G/s]. By default used \"MB/s\"."
+            }
+        },
+        " Example: 1024[Mhz|Ghz|%]": {
+            " By default used \"%\"": {
+                "": "Use postfix if it is needed. Example: 1024[Mhz|Ghz|%]. By default used \"%\"."
+            }
+        }
+    },
+    "User cannot be None": {
+        "": "User cannot be None."
+    },
+    "User or domain parameter must be specified if current user is root": "User or domain parameter must be specified if current user is root",
+    "VMEM": "VMEM",
+    "VMEM Faults": "VMEM Faults",
+    "VMEM Limit": "VMEM Limit",
+    "Valid and available to set only when restricted mode is limit": "Valid and available to set only when restricted mode is limit",
+    "Valid and available to set only when restricted mode is period": "Valid and available to set only when restricted mode is period",
+    "Value": "Value",
+    "Value should be > 0": "Value should be > 0",
+    "Value should be >= 0": "Value should be >= 0",
+    "Value shouldn't be greater than {0}": "Value shouldn't be greater than {0}",
+    "Value shouldn't be lesser than {0}": "Value shouldn't be lesser than {0}",
+    "Variable name already exists": "Variable name already exists",
+    "Very Long": "Very Long",
+    "View": "View",
+    "View all apps": "View all apps",
+    "Violated the cpu limit": "Violated the cpu limit",
+    "Violated the read limit": "Violated the read limit",
+    "Violated the unknown limit": "Violated the unknown limit",
+    "Violated the write limit": "Violated the write limit",
+    "Virtual Memory Usage": "Virtual Memory Usage",
+    "Warning!": "Warning!",
+    "We couldn't validate your Cloudlinux License": {
+        " Please make sure your license is correct": {
+            "": "We couldn't validate your Cloudlinux License. Please make sure your license is correct."
+        }
+    },
+    "Wed": "Wed",
+    "What we recommend": "What we recommend",
+    "Where the log file is placed in the file system": {
+        "": "Where the log file is placed in the file system."
+    },
+    "Withing last 24 hours": "Withing last 24 hours",
+    "X-Ray was successfully installed!": "X-Ray was successfully installed!",
+    "XML functionality": "XML functionality",
+    "Yaf is a PHP framework similar to zend framework, which is written in c and built as PHP extension": "Yaf is a PHP framework similar to zend framework, which is written in c and built as PHP extension",
+    "Yes": "Yes",
+    "Yesterday": "Yesterday",
+    "You can find e-mails templates in: /usr/share/lve/emails/en_US folder": {
+        " To translate, create a copy of that folder for desired locate": {
+            "": "You can find e-mails templates in: /usr/share/lve/emails/en_US folder. To translate, create a copy of that folder for desired locate."
+        }
+    },
+    "You can unrestrict him:": "You can unrestrict him:",
+    "You can unrestricted him:": "You can unrestricted him:",
+    "You have passed the beta testing stage": {
+        " To continue using the product you should:": "You have passed the beta testing stage. To continue using the product you should:"
+    },
+    "Your Free Beta period has ended": {
+        "": "Your Free Beta period has ended."
+    },
+    "Your rpm database was broken": "Your rpm database was broken",
+    "Zend Guard provides independent software vendors and IT managers with the ability to safely distribute and manage the distribution of their PHP applications while protecting their source code": "Zend Guard provides independent software vendors and IT managers with the ability to safely distribute and manage the distribution of their PHP applications while protecting their source code",
+    "Zend Optimizer is a free application that runs the files encoded using Zend Guard and enhances the overall performance of your PHP applications": "Zend Optimizer is a free application that runs the files encoded using Zend Guard and enhances the overall performance of your PHP applications",
+    "abusers": "abusers",
+    "abusers default": "abusers default",
+    "alt-php packages not found": "alt-php packages not found",
+    "and being kept for 10 days": "and being kept for 10 days",
+    "corrupted answer from /usr/bin/selectorctl --json --summary --interpreter nodejs": "corrupted answer from /usr/bin/selectorctl --json --summary --interpreter nodejs",
+    "current version is disabled": "current version is disabled",
+    "days": "days",
+    "default": "default",
+    "disable": "disable",
+    "disabled": "disabled",
+    "driver that implements the PHP Data Objects (PDO) interface to enable access from PHP to databases through ODBC drivers or through the IBM DB2 Call Level Interface (DB2 CLI) library": "driver that implements the PHP Data Objects (PDO) interface to enable access from PHP to databases through ODBC drivers or through the IBM DB2 Call Level Interface (DB2 CLI) library",
+    "enable": "enable",
+    "enabled": "enabled",
+    "finish and install": "finish and install",
+    "hours": "hours",
+    "in": "in",
+    "is disabled for this user": "is disabled for this user",
+    "lvestats server is dead but pid file exists": {
+        " Use 'service lvestats restart' command to restart it": "lvestats server is dead but pid file exists. Use 'service lvestats restart' command to restart it"
+    },
+    "minutes": "minutes",
+    "native": "native",
+    "ncurses (new curses) is a free software emulation of curses in System V Rel 4": {
+        "0 (and above)": {
+            " It uses terminfo format, supports pads, colors, multiple highlights, form characters and function key mapping": {
+                " Because of the interactive nature of this library, it will be of little use for writing Web applications, but may be useful when writing scripts meant using PHP from the command line": "ncurses (new curses) is a free software emulation of curses in System V Rel 4.0 (and above). It uses terminfo format, supports pads, colors, multiple highlights, form characters and function key mapping. Because of the interactive nature of this library, it will be of little use for writing Web applications, but may be useful when writing scripts meant using PHP from the command line"
+            }
+        }
+    },
+    "now": "now",
+    "npm run-script call: `%(args)s` failed with error: %(err)s": "npm run-script call: `%(args)s` failed with error: %(err)s",
+    "off": "off",
+    "period": "period",
+    "retry": "retry",
+    "run-script call: `%(args)s` failed with error: %(err)s": "run-script call: `%(args)s` failed with error: %(err)s",
+    "second": "second",
+    "seconds": "seconds",
+    "single": "single",
+    "skip wizard": "skip wizard",
+    "start wizard": "start wizard",
+    "started (v%(version)s)": "started (v%(version)s)",
+    "stopped (v%(version)s)": "stopped (v%(version)s)",
+    "unlimited": "unlimited",
+    "xrange is a compiled extension that provides numeric iteration primitives to PHP on top of SPL": {
+        " It includes a lean numeric range generator and iterator, modeled after Python's xrange() function": {
+            " It's intended to provide an alternative for all numeric iteration and looping": "xrange is a compiled extension that provides numeric iteration primitives to PHP on top of SPL. It includes a lean numeric range generator and iterator, modeled after Python's xrange() function. It's intended to provide an alternative for all numeric iteration and looping"
+        }
+    },
+    "{{test}} is OK": "{{test}} is OK",
+    "Isolation allowed": "Isolation allowed",
+    "Isolation denied": "Isolation denied",
+    "Disabled": "Disabled",
+    "Governor": "Governor",
+    "MONITORING": {
+        "last_updated_with_date": "Last updated: {{date}}, 00:00",
+        "collected_data_last_update": "Collected data for the last 24 hours, last update: {{date}}"
+    },
+    "ADVICE": {
+        "pages_speedup_count": "{{count}} pages are expected to be speed up:"
+    }
+}
