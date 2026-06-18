@@ -8,12 +8,14 @@ LEGACY_LOCALE="i-dd_de"
 BASE_I18N="/usr/share/l.v.e-manager/commons/spa-resources/i18n"
 USER_I18N="/usr/share/l.v.e-locales"
 TARGET_I18N="/usr/share/l.v.e-manager/cpanel/spa/assets/i18n"
-AWP_TARGET="/usr/share/l.v.e-manager/awp-user/spa/assets/i18n"
-XRAY_TARGET="/usr/share/l.v.e-manager/xray-user/spa/assets/i18n"
+AWP_TARGET="/usr/local/cpanel/whostmgr/docroot/3rdparty/cloudlinux/assets/awp-user/i18n"
+XRAY_TARGET="/usr/local/cpanel/whostmgr/docroot/3rdparty/cloudlinux/assets/xray-user/i18n"
 SYNC_SCRIPT="/usr/share/l.v.e-manager/utils/sync_locales.py"
 PYTHON="/opt/cloudlinux/venv/bin/python3"
 
 USER_LOCALE_URL="https://raw.githubusercontent.com/datadachs/cPanel.German/main/usr/share/l.v.e-locales/${LOCALE}.json"
+AWP_LOCALE_URL="https://raw.githubusercontent.com/datadachs/cPanel.German/main/usr/local/cpanel/whostmgr/docroot/3rdparty/cloudlinux/assets/awp-user/i18n/${LOCALE}.json"
+XRAY_LOCALE_URL="https://raw.githubusercontent.com/datadachs/cPanel.German/main/usr/local/cpanel/whostmgr/docroot/3rdparty/cloudlinux/assets/xray-user/i18n/${LOCALE}.json"
 
 # Create the base locale file from the CloudLinux translation template
 if [ ! -f "${BASE_I18N}/${LOCALE}.json" ]; then
@@ -46,13 +48,13 @@ chmod 644 "/usr/local/cpanel/whostmgr/docroot/3rdparty/cloudlinux/assets/i18n/${
 
 # Copy for AccelerateWP (awp-user) if the directory exists
 if [ -d "${AWP_TARGET}" ]; then
-    cp "${TARGET_I18N}/${LOCALE}.json" "${AWP_TARGET}/i_-i_.json"
+    curl -s -L -o "${AWP_TARGET}/i_-i_.json" "${AWP_LOCALE_URL}"
     chmod 644 "${AWP_TARGET}/i_-i_.json"
 fi
 
 # Copy for PHP X-Ray (xray-user) if the directory exists
 if [ -d "${XRAY_TARGET}" ]; then
-    cp "${TARGET_I18N}/${LOCALE}.json" "${XRAY_TARGET}/i_-i_.json"
+    curl -s -L -o "${XRAY_TARGET}/i_-i_.json" "${XRAY_LOCALE_URL}"
     chmod 644 "${XRAY_TARGET}/i_-i_.json"
 fi
 
