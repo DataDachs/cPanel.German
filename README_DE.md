@@ -22,7 +22,7 @@ Da `i_dd_de` eine benutzerdefinierte (nicht-standardisierte) Sprache ist, muss s
 Direkt auf dem Server ausführen
 
 ```bash
-wget https://raw.githubusercontent.com/scysys/cPanel.German/main/i_dd_de.xlf
+wget https://raw.githubusercontent.com/datadachs/cPanel.German/main/i_dd_de.xlf
 /usr/local/cpanel/bin/locale_import i_dd_de.xlf
 ```
 

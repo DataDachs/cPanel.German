@@ -22,7 +22,7 @@ Since `i_dd_de` is a custom (non-standard) language, it must be registered in WH
 Run directly on the server
 
 ```bash
-wget https://raw.githubusercontent.com/scysys/cPanel.German/main/i_dd_de.xlf
+wget https://raw.githubusercontent.com/datadachs/cPanel.German/main/i_dd_de.xlf
 /usr/local/cpanel/bin/locale_import i_dd_de.xlf
 ```
 
