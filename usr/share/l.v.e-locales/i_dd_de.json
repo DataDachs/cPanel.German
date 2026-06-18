@@ -1,5 +1,5 @@
 {
-    "LANG_CODE": "i-dd_de",
+    "LANG_CODE": "i_dd_de",
     "ERROR": {
         "lvemanagerFileMissingOrCorrupt": "Fehlerhafte Serverantwort. Bitte kontaktieren Sie Ihren Hoster.",
         "not_available_plugin": "{pluginName} ist nicht verfügbar. Bitte kontaktieren Sie Ihren Hoster.",
