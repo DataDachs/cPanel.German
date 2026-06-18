@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Editors
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temp & Backup
+*.bak
+*.tmp
+*.orig
+*.backup
+
+# OS
+Thumbs.db
+
+# Agent
+.agents/
