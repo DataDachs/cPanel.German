@@ -1,0 +1,24 @@
+
+{
+    "Create New Schedule": "Neuen Zeitplan erstellen",
+    "Daily Schedule runs every %s": "Täglicher Zeitplan läuft jeden %s",
+    "Delay": "Verzögerung",
+    "Filter by Tags": "Nach Tags filtern",
+    "Hourly Schedule runs every %s Hours": "Stündlicher Zeitplan läuft alle %s Stunden",
+    "Jobs Assigned": "Zugewiesene Aufträge",
+    "Loading Schedules": "Zeitpläne werden geladen",
+    "Monthly Schedule runs every %s of every month": "Monatlicher Zeitplan läuft jeden %s jeden Monats",
+    "Name": "Name",
+    "No Delay": "Keine Verzögerung",
+    "No Schedules Found": "Keine Zeitpläne gefunden",
+    "Owner": "Eigentümer",
+    "Refresh Records": "Einträge aktualisieren",
+    "Runs after the \"%s\" backup job Ends": "Läuft nach Abschluss des Backup-Auftrags \"%s\"",
+    "Runs after the \"%s\" clone job Ends": "Läuft nach Abschluss des Klon-Auftrags \"%s\"",
+    "Schedules": "Zeitpläne",
+    "Sort by %s.": "Sortieren nach %s.",
+    "This schedule will be permanently deleted!": "Dieser Zeitplan wird unwiderruflich gelöscht!",
+    "Type": "Typ",
+    "Weekly Schedule runs every %s": "Wöchentlicher Zeitplan läuft jeden %s",
+    "day": "Tag"
+}

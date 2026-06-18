@@ -1,0 +1,22 @@
+
+{
+    "Accounts to recover": "Wiederherzustellende Konten",
+    "Adjust Settings": "Einstellungen anpassen",
+    "Adjust the settings": "Einstellungen anpassen",
+    "Are you sure you want start disaster recovery? All current data will be lost": "Sind Sie sicher, dass Sie die Notfallwiederherstellung starten möchten? Alle aktuellen Daten gehen verloren",
+    "Are you sure you want to exit disaster recovery mode?": "Sind Sie sicher, dass Sie den Notfallwiederherstellungsmodus verlassen möchten?",
+    "Available JB configuration files": "Verfügbare JB-Konfigurationsdateien",
+    "Connect to the destination where the JetBackup configuration files are stored": "Verbinden Sie sich mit dem Ziel, auf dem die JetBackup-Konfigurationsdateien gespeichert sind",
+    "Disaster Recovery Wizard": "Notfallwiederherstellungs-Assistent",
+    "Dropping all JetBackup data from database": "Alle JetBackup-Daten aus der Datenbank werden gelöscht",
+    "Exit Disaster Recovery Mode": "Notfallwiederherstellungsmodus verlassen",
+    "Failed restoring JB Configurations, the DR Wizard will now exit and start over. Error: %s": "Wiederherstellung der JB-Konfigurationen fehlgeschlagen, der DR-Assistent wird nun beendet und neu gestartet. Fehler: %s",
+    "Finish & login to panel": "Fertigstellen & am Panel anmelden",
+    "JB Configurations destination": "JB-Konfigurationsziel",
+    "Next Step": "Nächster Schritt",
+    "Please select whether to start to recover your server from a disaster, continue with the default JetBackup configuration, or keep current configuration": "Bitte wählen Sie, ob Sie Ihren Server nach einem Notfall wiederherstellen, mit der Standard-JetBackup-Konfiguration fortfahren oder die aktuelle Konfiguration beibehalten möchten",
+    "Select the desired JB configuration file": "Gewünschte JB-Konfigurationsdatei auswählen",
+    "Select the desired accounts you want to restore": "Gewünschte Konten zur Wiederherstellung auswählen",
+    "Start Over": "Neu starten",
+    "What to do next?": "Wie möchten Sie fortfahren?"
+}

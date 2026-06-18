@@ -1,0 +1,17 @@
+
+{
+    "Backup Priority": "Backup-Priorität",
+    "Clone Priority": "Klon-Priorität",
+    "Create New Queue Priority": "Neue Warteschlangenpriorität erstellen",
+    "Default": "Standard",
+    "Download Priority": "Download-Priorität",
+    "Loading Queue Priorities": "Warteschlangenprioritäten werden geladen",
+    "Name": "Name",
+    "No Queue Priorities Found": "Keine Warteschlangenprioritäten gefunden",
+    "Queue Priorities": "Warteschlangenprioritäten",
+    "Refresh Records": "Einträge aktualisieren",
+    "Restore Priority": "Wiederherstellungs-Priorität",
+    "Sort by %s.": "Sortieren nach %s.",
+    "Tags": "Tags",
+    "This queue priority will be permanently deleted!": "Diese Warteschlangenpriorität wird unwiderruflich gelöscht!"
+}

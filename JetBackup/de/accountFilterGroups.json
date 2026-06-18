@@ -1,0 +1,17 @@
+
+{
+    "Account Filter Groups": "Kontenfiltergruppen",
+    "Create New Filter Group": "Neue Filtergruppe erstellen",
+    "Filters": "Filter",
+    "Jobs Assigned": "Zugewiesene Aufträge",
+    "Loading Account Filter Groups": "Kontenfiltergruppen werden geladen",
+    "Manage Account Filters": "Kontenfilter verwalten",
+    "Name": "Name",
+    "No Account Filter Groups Found": "Keine Kontenfiltergruppen gefunden",
+    "No jobs assigned to this schedule": "Keine Aufträge diesem Zeitplan zugewiesen",
+    "Owner": "Eigentümer",
+    "Refresh Records": "Einträge aktualisieren",
+    "Sort by %s.": "Sortieren nach %s.",
+    "This account filter group has an assigned jobs, Please remove those jobs before deleting this account filter group.": "Dieser Kontenfiltergruppe sind Aufträge zugewiesen. Bitte entfernen Sie diese Aufträge, bevor Sie diese Kontenfiltergruppe löschen.",
+    "This group will be permanently deleted!": "Diese Gruppe wird unwiderruflich gelöscht!"
+}

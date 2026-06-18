@@ -1,0 +1,25 @@
+
+{
+    "Add New Queue Priority": "Neue Warteschlangenpriorität hinzufügen",
+    "Apply": "Übernehmen",
+    "Back to Queue Priorities": "Zurück zu Warteschlangenprioritäten",
+    "Backup Priority": "Backup-Priorität",
+    "Cancel": "Abbrechen",
+    "Clone Priority": "Klon-Priorität",
+    "Disregard Changes": "Änderungen verwerfen",
+    "Download Priority": "Download-Priorität",
+    "List Tags": "Tags auflisten",
+    "Modify Queue Priority \"%s\"": "Warteschlangenpriorität \"%s\" bearbeiten",
+    "Name": "Name",
+    "No tag matching \"%s\" were found.": "Kein Tag mit \"%s\" gefunden.",
+    "Restore Priority": "Wiederherstellungs-Priorität",
+    "Save": "Speichern",
+    "Set the queue priority name": "Namen der Warteschlangenpriorität festlegen",
+    "Specify queue backup priority value": "Warteschlangen-Backup-Prioritätswert angeben",
+    "Specify queue clone priority value": "Warteschlangen-Klon-Prioritätswert angeben",
+    "Specify queue download priority value": "Warteschlangen-Download-Prioritätswert angeben",
+    "Specify queue restore priority value": "Warteschlangen-Wiederherstellungs-Prioritätswert angeben",
+    "Start typing the requested tag name...": "Gewünschten Tag-Namen eingeben...",
+    "Tags": "Tags",
+    "You didn't saved your changes": "Sie haben Ihre Änderungen nicht gespeichert"
+}

@@ -1,0 +1,21 @@
+
+{
+    "Accounts Filter": "Kontenfilter",
+    "Apply": "Übernehmen",
+    "Back to Account Filter Groups": "Zurück zu Kontenfiltergruppen",
+    "Cancel": "Abbrechen",
+    "Characters Range Filter": "Zeichenbereichsfilter",
+    "Create New Account Filter Group": "Neue Kontenfiltergruppe erstellen",
+    "Disk Space Usage Filter": "Speicherplatzverbrauchsfilter",
+    "Disregard Changes": "Änderungen verwerfen",
+    "Encryption Filter": "Verschlüsselungsfilter",
+    "Inodes Usage Filter": "Inode-Verbrauchsfilter",
+    "Modify Account Filter Group \"%s\"": "Kontenfiltergruppe \"%s\" bearbeiten",
+    "Owned By Filter": "Eigentümerfilter",
+    "Packages Filter": "Paketfilter",
+    "Regular Expression Filter": "Filter für reguläre Ausdrücke",
+    "Resellers Filter": "Resellerfilter",
+    "Save": "Speichern",
+    "Suspension Filter": "Sperrungsfilter",
+    "You didn't saved your changes": "Sie haben Ihre Änderungen nicht gespeichert"
+}

@@ -1,0 +1,9 @@
+
+{
+    "If your issue persists, please contact your JetBackup service provider for more information.": "Wenn das Problem weiterhin besteht, wenden Sie sich bitte an Ihren JetBackup-Dienstanbieter für weitere Informationen.",
+    "If your license is active, validate your JetBackup license against our licensing servers by executing the following command from your server's CLI as root user:": "Wenn Ihre Lizenz aktiv ist, überprüfen Sie Ihre JetBackup-Lizenz gegen unsere Lizenzserver, indem Sie den folgenden Befehl über die CLI Ihres Servers als Root-Benutzer ausführen:",
+    "License Issue": "Lizenzproblem",
+    "Please take the following steps to resolve your issue.": "Bitte führen Sie die folgenden Schritte durch, um Ihr Problem zu beheben.",
+    "Reload Page": "Seite neu laden",
+    "Verify that your server license is active at:": "Überprüfen Sie, ob Ihre Serverlizenz aktiv ist unter:"
+}

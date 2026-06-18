@@ -1,0 +1,24 @@
+
+{
+    "Category": "Kategorie",
+    "Create New File Permission": "Neue Dateiberechtigung erstellen",
+    "Directories Permissions": "Verzeichnisberechtigungen",
+    "Dirs Perms": "Verz.-Berecht.",
+    "File Permissions": "Dateiberechtigungen",
+    "Files Permissions": "Dateiberechtigungen",
+    "Files Perms": "Dat.-Berecht.",
+    "Glob Pattern": "Glob-Muster",
+    "Group": "Gruppe",
+    "Loading File Permissions": "Dateiberechtigungen werden geladen",
+    "No": "Nein",
+    "No File Permissions Found": "Keine Dateiberechtigungen gefunden",
+    "None": "Keine",
+    "Owner": "Eigentümer",
+    "Recursive": "Rekursiv",
+    "Refresh Records": "Einträge aktualisieren",
+    "Sort by %s.": "Sortieren nach %s.",
+    "This file permission will be permanently deleted!": "Diese Dateiberechtigung wird unwiderruflich gelöscht!",
+    "Yes": "Ja",
+    "default": "Standard",
+    "recursive": "rekursiv"
+}

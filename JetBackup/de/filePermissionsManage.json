@@ -1,0 +1,27 @@
+
+{
+    "Apply": "Übernehmen",
+    "Apply changes": "Änderungen übernehmen",
+    "Apply the File Permission Rule recursively.": "Die Dateiberechtigungsregel rekursiv anwenden.",
+    "Back to File Permissions": "Zurück zu Dateiberechtigungen",
+    "Cancel": "Abbrechen",
+    "Cancel changes": "Änderungen abbrechen",
+    "Category": "Kategorie",
+    "Create New File Permission": "Neue Dateiberechtigung erstellen",
+    "Directories Permissions": "Verzeichnisberechtigungen",
+    "Files Permissions": "Dateiberechtigungen",
+    "Glob Pattern": "Glob-Muster",
+    "Group": "Gruppe",
+    "Modify File Permission": "Dateiberechtigung bearbeiten",
+    "No": "Nein",
+    "Owner": "Eigentümer",
+    "Recursive": "Rekursiv",
+    "Save": "Speichern",
+    "Save changes": "Änderungen speichern",
+    "Specify the permission glob pattern": "Geben Sie das Berechtigungs-Glob-Muster an",
+    "Specify the restored directories permissions": "Geben Sie die Berechtigungen für wiederhergestellte Verzeichnisse an",
+    "Specify the restored file group. Leave empty to use default group": "Geben Sie die Gruppe für wiederhergestellte Dateien an. Leer lassen für Standardgruppe",
+    "Specify the restored file ownership. Leave empty to use default user": "Geben Sie den Eigentümer für wiederhergestellte Dateien an. Leer lassen für Standardbenutzer",
+    "Specify the restored files permissions": "Geben Sie die Berechtigungen für wiederhergestellte Dateien an",
+    "Yes": "Ja"
+}

@@ -1,0 +1,22 @@
+
+{
+  "Recipients": "Empfänger",
+  "Email addresses that notifications will be sent to. (separated by comma)": "E-Mail-Adressen, an die Benachrichtigungen gesendet werden. (durch Komma getrennt)",
+  "[ Leave blank to use the server default contact e-mail. ]": "[ Leer lassen, um die Standard-Kontakt-E-Mail des Servers zu verwenden. ]",
+  "Email Server": "E-Mail-Server",
+  "Local PHP Mailer": "Lokaler PHP-Mailer",
+  "SMTP": "SMTP",
+  "SMTP From Email": "SMTP-Absender-E-Mail",
+  "SMTP Host": "SMTP-Host",
+  "SMTP Port": "SMTP-Port",
+  "SMTP Username": "SMTP-Benutzername",
+  "SMTP Password": "SMTP-Passwort",
+  "SMTP Secure": "SMTP-Verschlüsselung",
+  "SMTP Timeout": "SMTP-Timeout",
+  "None": "Keine",
+  "SSL": "SSL",
+  "TLS": "TLS",
+  "Verify SSL": "SSL überprüfen",
+  "Yes": "Ja",
+  "No": "Nein"
+}

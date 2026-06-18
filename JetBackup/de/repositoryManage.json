@@ -1,0 +1,15 @@
+
+{
+    "Apply": "Übernehmen",
+    "Back to Repositories": "Zurück zu Repositories",
+    "Cancel": "Abbrechen",
+    "Create New Repository": "Neues Repository erstellen",
+    "Disregard Changes": "Änderungen verwerfen",
+    "Modify Repository \"%s\"": "Repository \"%s\" bearbeiten",
+    "Repository Name": "Repository-Name",
+    "Repository URL": "Repository-URL",
+    "Save": "Speichern",
+    "The repository URL": "Die Repository-URL",
+    "This will be used internally for your convenience": "Dies wird intern zu Ihrer Orientierung verwendet",
+    "You didn't saved your changes": "Sie haben Ihre Änderungen nicht gespeichert"
+}

@@ -1,0 +1,19 @@
+
+{
+  "Unlimited": "Unbegrenzt",
+  "Backup Directory": "Backup-Verzeichnis",
+  "Files will be copied to this folder on the remote destination.": "Dateien werden in diesen Ordner auf dem Remote-Ziel kopiert.",
+  "Remote Host": "Remote-Host",
+  "Port": "Port",
+  "Remote Username": "Remote-Benutzername",
+  "Authentication Type": "Authentifizierungstyp",
+  "Private Key": "Privater Schlüssel",
+  "Password": "Passwort",
+  "Remote Password": "Remote-Passwort",
+  "Connection Timeout": "Verbindungs-Timeout",
+  "The Connection Time Out in seconds": "Das Verbindungs-Timeout in Sekunden",
+  "Rsync Bandwidth Limit": "Rsync-Bandbreitenlimit",
+  "Limit rsync bandwidth": "Rsync-Bandbreite begrenzen",
+  "Rsync Prefer IPv4/IPv6": "Rsync bevorzugt IPv4/IPv6",
+  "Default Route": "Standardroute"
+}

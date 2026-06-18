@@ -1,0 +1,27 @@
+
+{
+    "Alerts": "Warnmeldungen",
+    "Alerts documentation.": "Dokumentation zu Warnmeldungen.",
+    "All Alerts": "Alle Warnmeldungen",
+    "All alerts will be deleted and no future notifications will be sent": "Alle Warnmeldungen werden gelöscht und keine weiteren Benachrichtigungen gesendet",
+    "Clear Alerts": "Warnmeldungen löschen",
+    "Created": "Erstellt",
+    "Critical Alerts": "Kritische Warnmeldungen",
+    "Error: %s": "Fehler: %s",
+    "Failed": "Fehlgeschlagen",
+    "For more information, please visit the": "Weitere Informationen finden Sie in der",
+    "Information Alerts": "Informations-Warnmeldungen",
+    "Level": "Stufe",
+    "Loading Alerts": "Warnmeldungen werden geladen",
+    "Message": "Nachricht",
+    "Message sent %s to \"%s\" on %s": "Nachricht %s an \"%s\" am %s gesendet",
+    "No Alerts Found": "Keine Warnmeldungen gefunden",
+    "Owner": "Eigentümer",
+    "Refresh Records": "Einträge aktualisieren",
+    "Send Logs": "Protokolle senden",
+    "Sort by %s.": "Sortieren nach %s.",
+    "Successfully": "Erfolgreich",
+    "There are 3 alert levels: critical, warning and information.": "Es gibt 3 Warnstufen: Kritisch, Warnung und Information.",
+    "Title": "Titel",
+    "Warning Alerts": "Warnungen"
+}

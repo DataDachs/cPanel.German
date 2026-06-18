@@ -1,0 +1,16 @@
+
+{
+    "Account": "Konto",
+    "All Tag Types": "Alle Tag-Typen",
+    "Create New Tag": "Neuen Tag erstellen",
+    "Loading Tags": "Tags werden geladen",
+    "No Tags Found": "Keine Tags gefunden",
+    "Owner": "Eigentümer",
+    "Refresh Records": "Einträge aktualisieren",
+    "Sort by %s.": "Sortieren nach %s.",
+    "Tag Color": "Tag-Farbe",
+    "Tag Name": "Tag-Name",
+    "Tag Type": "Tag-Typ",
+    "Tags": "Tags",
+    "This tag will be permanently deleted, also this tag will be removed from all accounts that are using it!": "Dieser Tag wird unwiderruflich gelöscht und aus allen Konten entfernt, die ihn verwenden!"
+}

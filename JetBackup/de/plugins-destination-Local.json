@@ -1,0 +1,7 @@
+
+{
+  "Backup Directory": "Backup-Verzeichnis",
+  "Files will be copied to this folder on the remote destination.": "Dateien werden in diesen Ordner auf dem Remote-Ziel kopiert.",
+  "Rsync Bandwidth Limit": "Rsync-Bandbreitenlimit",
+  "Limit rsync bandwidth": "Rsync-Bandbreite begrenzen"
+}

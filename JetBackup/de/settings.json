@@ -1,0 +1,23 @@
+
+{
+    "Backup on Demand": "Backup auf Abruf",
+    "Binary Locations": "Binärpfade",
+    "Disregard Changes": "Änderungen verwerfen",
+    "For more information, please visit the": "Weitere Informationen finden Sie in der",
+    "General": "Allgemein",
+    "Invalid value provided for %s": "Ungültiger Wert für %s angegeben",
+    "JetBackup settings are broken down into 9 sections. Click on each tab at the top of this section to review all settings.": "Die JetBackup-Einstellungen sind in 9 Bereiche unterteilt. Klicken Sie auf die einzelnen Registerkarten oben in diesem Bereich, um alle Einstellungen zu überprüfen.",
+    "Leave Section": "Bereich verlassen",
+    "Notification": "Benachrichtigung",
+    "Panel": "Panel",
+    "Performance": "Leistung",
+    "Privacy & Security": "Datenschutz & Sicherheit",
+    "Resource": "Ressource",
+    "Restore": "Wiederherstellen",
+    "Save": "Speichern",
+    "Settings": "Einstellungen",
+    "Settings documentation.": "Dokumentation zu Einstellungen.",
+    "Stay On Section": "Im Bereich bleiben",
+    "Update Preferences": "Aktualisierungseinstellungen",
+    "You didn't saved your changes": "Sie haben Ihre Änderungen nicht gespeichert"
+}

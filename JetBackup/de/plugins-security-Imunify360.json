@@ -1,0 +1,15 @@
+
+{
+  "Imunify360 helps you provide a secure and reliable web hosting service. It’s multi-layered defense architecture ensures precision targeting and eradication of malware and viruses. For more information:" : "Imunify360 hilft Ihnen, einen sicheren und zuverlässigen Webhosting-Service bereitzustellen. Die mehrschichtige Verteidigungsarchitektur sorgt für präzise Erkennung und Beseitigung von Malware und Viren. Weitere Informationen:",
+  "Restore Infected Action" : "Aktion bei infizierter Wiederherstellung",
+  "On malware detection" : "Bei Malware-Erkennung",
+  "On malware cleanup" : "Bei Malware-Bereinigung",
+  "The infected file will never be restored." : "Die infizierte Datei wird niemals wiederhergestellt.",
+  "The infected file will be restored after the malware detection - Please note that if you have an auto cleanup the restored file will be removed!" : "Die infizierte Datei wird nach der Malware-Erkennung wiederhergestellt – Hinweis: Bei aktivierter automatischer Bereinigung wird die wiederhergestellte Datei entfernt!",
+  "The infected file will be restored after the malware auto clean up." : "Die infizierte Datei wird nach der automatischen Malware-Bereinigung wiederhergestellt.",
+  "Lock Infected Action" : "Aktion bei infizierter Sperre",
+  "Never Lock the account backup." : "Das Konto-Backup niemals sperren.",
+  "Lock the account latest backup after malware detection - If you set a restore action on this stage, the cleaned backup will be locked." : "Das neueste Konto-Backup nach Malware-Erkennung sperren – Wenn Sie auf dieser Stufe eine Wiederherstellungsaktion festlegen, wird das bereinigte Backup gesperrt.",
+  "Lock the account latest backup after malware cleanup - If you set a restore action on this stage, the cleaned backup will be locked." : "Das neueste Konto-Backup nach Malware-Bereinigung sperren – Wenn Sie auf dieser Stufe eine Wiederherstellungsaktion festlegen, wird das bereinigte Backup gesperrt.",
+  "The script you want to execute when a successful action is triggered.": "Das Skript, das bei einer erfolgreichen Aktion ausgeführt werden soll."
+}

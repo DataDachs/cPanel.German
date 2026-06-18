@@ -1,0 +1,26 @@
+
+{
+    "Account Tags Filter": "Konto-Tags-Filter",
+    "Accounts Filter": "Kontenfilter",
+    "Apply": "Übernehmen",
+    "Back to Account Filters": "Zurück zu Kontenfiltern",
+    "Cancel": "Abbrechen",
+    "Characters Range Filter": "Zeichenbereichsfilter",
+    "Create New Account Filter": "Neuen Kontenfilter erstellen",
+    "Disk Space Usage Filter": "Speicherplatzverbrauchsfilter",
+    "Disregard Changes": "Änderungen verwerfen",
+    "Encryption Filter": "Verschlüsselungsfilter",
+    "Exclude": "Ausschließen",
+    "Include": "Einschließen",
+    "Include Above (or equals)": "Einschließen ab (oder gleich)",
+    "Include Below (or equals)": "Einschließen bis (oder gleich)",
+    "Inodes Usage Filter": "Inode-Verbrauchsfilter",
+    "Modify Account Filter \"%s\"": "Kontenfilter \"%s\" bearbeiten",
+    "Owned By Filter": "Eigentümerfilter",
+    "Packages Filter": "Paketfilter",
+    "Regular Expression Filter": "Filter für reguläre Ausdrücke",
+    "Resellers Filter": "Resellerfilter",
+    "Save": "Speichern",
+    "Suspension Filter": "Sperrungsfilter",
+    "You didn't saved your changes": "Sie haben Ihre Änderungen nicht gespeichert"
+}
